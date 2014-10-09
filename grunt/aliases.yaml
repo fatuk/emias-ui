@@ -1,0 +1,11 @@
+default:
+  - 'less'
+  - 'autoprefixer'
+  - 'uglify'
+  - 'mustache_render'
+  - 'connect'
+  - 'watch'
+svg:
+  - 'svgmin'
+  - 'svgstore'
+  - 'replace'

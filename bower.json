@@ -1,0 +1,21 @@
+{
+    "name": "grunt-frontend-boilerplate",
+    "version": "0.1.1",
+    "authors": [
+        "fatuk <fatukk@gmail.com>"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "1.11.1",
+        "normalize-less": "*",
+        "3l": "~1.4.4"
+    }
+}
