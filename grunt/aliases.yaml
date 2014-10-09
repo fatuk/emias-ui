@@ -1,5 +1,5 @@
 default:
-  - 'less'
+  - 'sass'
   - 'autoprefixer'
   - 'uglify'
   - 'mustache_render'

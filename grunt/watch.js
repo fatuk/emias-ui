@@ -2,9 +2,9 @@ module.exports = {
     options: {
         livereload: true
     },
-    less: {
-        files: 'less/*.less',
-        tasks: ['less', 'autoprefixer'],
+    scss: {
+        files: 'scss/*.scss',
+        tasks: ['sass', 'autoprefixer'],
         options: {
             interrupt: true,
             livereload: false
