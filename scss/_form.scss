@@ -1,0 +1,22 @@
+.form {
+
+}
+.form__header {
+	height: 32px;
+	background: #eee;
+	box-shadow: 0 0 5px rgba(0,0,0,.1) inset;
+}
+.form__title {
+	margin: 0;
+	color: #aaa;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 32px;
+	height: 32px;
+	padding-left: 17px;
+	text-shadow: 0 1px 0 #fff;
+}
+.form__row {
+	width: 512px;
+	padding-left: 100px;
+}

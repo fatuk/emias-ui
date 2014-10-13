@@ -10,7 +10,18 @@
     <![endif]-->
 </head>
 <body>
-    {{>hello}}
+    <div class="container">
+        <div class="form">
+            <header class="form__header">
+                <h1 class="form__title">
+                    Форма
+                </h1>
+            </header>
+            <div class="form__row">
+                {{>input}}
+            </div>
+        </div>
+    </div>
 
     <div class="btn">btn</div>
 
