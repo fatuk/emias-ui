@@ -1,9 +1,12 @@
 .label {
 	font-size: 13px;
 	font-weight: 600;
+	white-space: normal;
+	padding: 0;
 	&__text {
 		color: #888;
 		transition: color .3s;
+		padding-right: 20px;
 	}
 	&__required {
 		color: #e55c5c;

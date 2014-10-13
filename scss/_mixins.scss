@@ -1,0 +1,112 @@
+/************
+ Mixin
+************/
+@mixin arrow_helper($arrowSize, $arrowColor, $margin, $side, $align) {
+  @if $side == "top" {
+    border-bottom-color: $arrowColor;
+    top: -2 * $arrowSize;
+  }
+  @if $side == "bottom" {
+    border-top-color: $arrowColor;
+    bottom: -2 * $arrowSize;
+  }
+  @if $side == "left" {
+    border-right-color: $arrowColor;
+    left: -2 * $arrowSize;
+  }
+  @if $side == "right" {
+    border-left-color: $arrowColor;
+    right: -2 * $arrowSize;
+  }
+  @if $side == "right" or $side == "left" {
+    @if $align == "center" {
+      top: 50%;
+      margin-top: -$arrowSize;
+    }
+    @else if $align == "top" {
+      top: $margin;
+    }
+    @else if $align == "bottom" {
+      bottom: $margin;
+    }
+  }
+  @if $side == "bottom" or $side == "top" {
+    @if $align == "center" {
+      right: 50%;
+      margin-right: -$arrowSize;
+    }
+    @else if $align == "left" {
+      left: $margin;
+    }
+    @else if $align == "right" {
+      right: $margin;
+    }
+  }
+}
+
+@mixin arrow($side: "right", $align: "center", $size: 20px, $color: #f6f6f6, $borderColor: "none", $borderSize: 3px) {
+  $selector: "&:after, &:before";
+  @if $borderColor == "none" {
+    $selector: "&:after";
+  }
+  #{$selector} {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    visibility: visible;
+  }
+
+  &:after {
+    border-width: $size;
+    @include arrow_helper($size, $color, $size, $side, $align);
+  }
+
+  @if $borderColor != "none" {
+    &:before {
+      border-width: $borderSize + $size;
+      @include arrow_helper($size + $borderSize, $borderColor, $size - $borderSize, $side, $align);
+    }
+  }
+}
+
+/************
+ Examples
+************/
+// .box {
+//   &.arrow-top-left {@include arrow('top','left', 10px, #4fade3)}
+//   &.arrow-top-right {@include arrow('top','right', 10px, #4fade3)}
+//   &.arrow-top-center {@include arrow('top','center', 10px, #4fade3)}
+//   &.arrow-bottom-left {@include arrow('bottom','left', 10px, #4fade3)}
+//   &.arrow-bottom-right {@include arrow('bottom','right', 10px, #4fade3)}
+//   &.arrow-bottom-center {@include arrow('bottom','center', 10px, #4fade3)}
+//   &.arrow-left-top {@include arrow('left','top', 10px, #4fade3)}
+//   &.arrow-left-center {@include arrow('left','center', 10px, #4fade3)}
+//   &.arrow-left-bottom {@include arrow('left','bottom', 10px, #4fade3)}
+//   &.arrow-right-top {@include arrow('right','top', 10px, #4fade3)}
+//   &.arrow-right-center {@include arrow('right','center', 10px, #4fade3)}
+//   &.arrow-right-bottom {@include arrow('right','bottom', 10px, #4fade3)}
+// }
+
+
+// .box-with-border {
+//   &.arrow-top-left {@include arrow('top','left', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-top-right {@include arrow('top','right', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-top-center {@include arrow('top','center', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-bottom-left {@include arrow('bottom','left', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-bottom-right {@include arrow('bottom','right', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-bottom-center {@include arrow('bottom','center', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-left-top {@include arrow('left','top', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-left-center {@include arrow('left','center', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-left-bottom {@include arrow('left','bottom', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-right-top {@include arrow('right','top', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-right-center {@include arrow('right','center', 10px, #eee, #4fade3, 6px)}
+//   &.arrow-right-bottom {@include arrow('right','bottom', 10px, #eee, #4fade3, 6px)}
+// }
+
+
+@mixin no-break() {
+    white-space: nowrap;
+}

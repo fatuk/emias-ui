@@ -1,0 +1,18 @@
+.error-hint {
+	position: absolute;
+	top: -38px;
+	left: 50%;
+	display: inline-block;
+	background: $red;
+	border-radius: 5px;
+	transform: translateX(-50%);
+	@include no-break();
+	&__text {
+		display: inline-block;
+		font-size: 13px;
+		color: #fff;
+		line-height: 28px;
+		padding: 0 10px;
+	}
+	@include arrow('bottom','center', 10px, $red, $red, 0);
+}

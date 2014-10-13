@@ -22,17 +22,35 @@
 		tr {
 			vertical-align: top;
 		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&.active {
+			.label__text {
+				color: #444;
+			}
+			.input {
+				border-color: #444;
+				color: #444;
+			}
+		}
 		&:hover {
 			.label__text {
 				color: $blue;
 			}
 			.input {
-				border-color: $blue;
+				border-color: $light-blue;
 				color: $blue;
 			}
 		}
-		&:last-child {
-			margin-bottom: 0;
+		&.error {
+			.label__text {
+				color: $red;
+			}
+			.input {
+				border-color: $red;
+				color: $red;
+			}
 		}
 	}
 	&__row-label {
@@ -52,7 +70,7 @@
 	&__row-hint {
 		font-size: 12px;
 		color: #aaa;
-		padding-left: 7px;
+		padding-left: 9px;
 		margin-top: 7px;
 	}
 }
