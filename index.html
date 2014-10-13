@@ -17,25 +17,49 @@
                     Форма
                 </h1>
             </header>
-            <div class="form__row">
-<label class="label">
-	<span class="label__text">
-		Метка названия поля
-		<sup class="label__required">*</sup>
-	</span>
-	<input type="text" class="input" name="">
-</label>
-<div class="extra">
-	доп. значение
-</div>ь
-<div class="text-hint">
-	Текст подсказки
-</div>
-            </div>
+            <table class="form__row">
+                <tr>
+                    <td class="form__row-label">
+                        <label for="field-1" class="label">
+                            <span class="label__text">
+                            Это очень длинное название поля
+                            <sup class="label__required">*</sup>
+                        </span>
+                        </label>
+                    </td>
+                    <td class="form__row-field">
+                        <input type="text" class="input" name="" id="field-1">
+                        <div class="form__row-hint">
+                            Текст подсказки
+                        </div>
+                    </td>
+                    <td class="form__row-aux">
+                        доп. значение
+                    </td>
+                </tr>
+            </table>
+            <table class="form__row">
+                <tr>
+                    <td class="form__row-label">
+                        <label for="field-2" class="label">
+                            <span class="label__text">
+                            Метка названия поля
+                            <sup class="label__required">*</sup>
+                        </span>
+                        </label>
+                    </td>
+                    <td class="form__row-field">
+                        <input type="text" class="input" name="" id="field-2">
+                    </td>
+                    <td class="form__row-aux">
+                        доп. значение
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
-    <div class="btn">btn</div>
+    <!-- <div class="btn">btn</div> -->
 
     <script src="vendors/plugins.min.js"></script>
     <script src="js/main.js"></script>
