@@ -1,10 +1,11 @@
 .label {
 	font-size: 13px;
 	font-weight: 600;
-}
-.label__text {
-	color: #888;
-}
-.label__required {
-	color: #e55c5c;
+	&__text {
+		color: #888;
+		transition: color .3s;
+	}
+	&__required {
+		color: #e55c5c;
+	}
 }
