@@ -564,10 +564,11 @@ body {
     color: #e55c5c; }
 
 .error-hint {
+  display: inline-block;
+  opacity: 0;
   position: absolute;
   top: -38px;
   left: 50%;
-  display: inline-block;
   background: #e65c5c;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -605,3 +606,49 @@ body {
 .field {
   position: relative;
   text-align: center; }
+
+body {
+  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+  -webkit-backface-visibility: hidden; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut; }
