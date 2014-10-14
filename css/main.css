@@ -470,62 +470,64 @@ body {
 .btn {
   color: red; }
 
-.form__header {
-  height: 32px;
-  background: #eee;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
-  margin-bottom: 30px; }
-.form__title {
-  margin: 0;
-  color: #aaa;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 32px;
-  height: 32px;
-  padding-left: 17px;
-  text-shadow: 0 1px 0 #fff; }
-.form__row {
-  width: 100%;
-  padding-left: 100px;
-  margin-bottom: 16px; }
-  .form__row tr {
-    vertical-align: top; }
-  .form__row:last-child {
-    margin-bottom: 0; }
-  .form__row.active .label__text {
-    color: #444; }
-  .form__row.active .input {
-    border-color: #444;
-    color: #444; }
-  .form__row:hover .label__text {
-    color: #297ca6; }
-  .form__row:hover .input {
-    border-color: #3399cc;
-    color: #297ca6; }
-  .form__row.error .label__text {
-    color: #e65c5c; }
-  .form__row.error .input {
-    border-color: #e65c5c;
-    color: #444; }
-  .form__row.disabled .label__text {
-    color: #aaa; }
-.form__row-label {
-  width: 225px;
-  padding-left: 34px;
-  line-height: 1; }
-.form__row-field {
-  width: 512px; }
-.form__row-aux {
-  font-size: 13px;
-  color: #888;
-  padding-left: 20px;
-  line-height: 30px; }
-.form__row-hint {
-  font-size: 12px;
-  color: #aaa;
-  padding-left: 9px;
-  margin-top: 7px; }
+.form {
+  margin-bottom: 40px; }
+  .form__header {
+    height: 32px;
+    background: #eee;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 30px; }
+  .form__title {
+    margin: 0;
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 32px;
+    height: 32px;
+    padding-left: 17px;
+    text-shadow: 0 1px 0 #fff; }
+  .form__row {
+    width: 100%;
+    padding-left: 100px;
+    margin-bottom: 16px; }
+    .form__row tr {
+      vertical-align: top; }
+    .form__row:last-child {
+      margin-bottom: 0; }
+    .form__row.active .label__text {
+      color: #444; }
+    .form__row.active .input {
+      border-color: #444;
+      color: #444; }
+    .form__row:hover .label__text {
+      color: #297ca6; }
+    .form__row:hover .input {
+      border-color: #3399cc;
+      color: #297ca6; }
+    .form__row.error .label__text {
+      color: #e65c5c; }
+    .form__row.error .input {
+      border-color: #e65c5c;
+      color: #444; }
+    .form__row.disabled .label__text {
+      color: #aaa; }
+  .form__row-label {
+    width: 225px;
+    padding-left: 34px;
+    line-height: 1; }
+  .form__row-field {
+    width: 512px; }
+  .form__row-aux {
+    font-size: 13px;
+    color: #888;
+    padding-left: 20px;
+    line-height: 30px; }
+  .form__row-hint {
+    font-size: 12px;
+    color: #aaa;
+    padding-left: 9px;
+    margin-top: 7px; }
 
 .input {
   border: solid 1px #ddd;
