@@ -497,17 +497,17 @@ body {
       margin-bottom: 0; }
     .form__row.active .label__text {
       color: #444; }
-    .form__row.active .input {
+    .form__row.active .input, .form__row.active .textarea {
       border-color: #444;
       color: #444; }
     .form__row:hover .label__text {
       color: #297ca6; }
-    .form__row:hover .input {
+    .form__row:hover .input, .form__row:hover .textarea {
       border-color: #3399cc;
       color: #297ca6; }
     .form__row.error .label__text {
       color: #e65c5c; }
-    .form__row.error .input {
+    .form__row.error .input, .form__row.error .textarea {
       border-color: #e65c5c;
       color: #444; }
     .form__row.disabled .label__text {
@@ -544,6 +544,7 @@ body {
           transition: color 0.3s, border 0.3s; }
   .input[disabled] {
     background: #eee;
+    color: #444 !important;
     border: solid 1px #ddd !important; }
 
 ::-webkit-input-placeholder {
@@ -659,3 +660,23 @@ body {
 .fadeOut {
   -webkit-animation-name: fadeOut;
           animation-name: fadeOut; }
+
+.textarea {
+  border: solid 1px #ddd;
+  font-size: 13px;
+  font-weight: normal;
+  color: #444;
+  min-height: 65px;
+  line-height: 16px;
+  padding: 5px 8px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.03)), color-stop(50%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0) 50%);
+  -webkit-transition: color 0.3s, border 0.3s;
+          transition: color 0.3s, border 0.3s; }
+  .textarea[disabled] {
+    background: #eee;
+    color: #444 !important;
+    border: solid 1px #ddd !important; }
+  .textarea_no-resize {
+    resize: none; }

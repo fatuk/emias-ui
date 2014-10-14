@@ -30,7 +30,8 @@
 			.label__text {
 				color: #444;
 			}
-			.input {
+			.input,
+			.textarea {
 				border-color: #444;
 				color: #444;
 			}
@@ -39,7 +40,8 @@
 			.label__text {
 				color: $blue;
 			}
-			.input {
+			.input,
+			.textarea {
 				border-color: $light-blue;
 				color: $blue;
 			}
@@ -48,7 +50,8 @@
 			.label__text {
 				color: $red;
 			}
-			.input {
+			.input,
+			.textarea {
 				border-color: $red;
 				color: #444;
 			}
