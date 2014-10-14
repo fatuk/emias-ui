@@ -614,6 +614,8 @@ body {
 .field {
   position: relative;
   text-align: center; }
+  .field_auto-width {
+    display: inline-block; }
 
 body {
   /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
@@ -673,10 +675,25 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.03)), color-stop(50%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0) 50%);
   -webkit-transition: color 0.3s, border 0.3s;
-          transition: color 0.3s, border 0.3s; }
+          transition: color 0.3s, border 0.3s;
+  resize: none; }
   .textarea[disabled] {
     background: #eee;
     color: #444 !important;
     border: solid 1px #ddd !important; }
-  .textarea_no-resize {
-    resize: none; }
+
+.date {
+  width: 175px;
+  position: relative; }
+  .date .icon {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    line-height: 32px;
+    font-size: 12px;
+    color: #BBBBBB; }
+  .date .input {
+    padding-right: 30px; }
+
+.date-range {
+  width: 145px; }

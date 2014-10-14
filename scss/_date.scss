@@ -1,0 +1,15 @@
+.date {
+	width: 175px;
+	position: relative;
+	.icon {
+		position: absolute;
+		right: 10px;
+		top: 0;
+		line-height: 32px;
+		font-size: 12px;
+		color: #BBBBBB;
+	}
+	.input {
+		padding-right: 30px;
+	}
+}

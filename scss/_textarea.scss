@@ -9,12 +9,10 @@
 	width: 100%;
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 50%);
 	transition: color .3s, border .3s;
+	resize: none;
 	&[disabled] {
 		background: #eee;
 		color: #444 !important;
 		border: solid 1px #ddd !important;
-	}
-	&_no-resize {
-		resize: none;
 	}
 }

@@ -110,3 +110,11 @@
 @mixin no-break() {
     white-space: nowrap;
 }
+
+@mixin clearfix {
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}

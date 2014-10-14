@@ -1,4 +1,7 @@
 .field {
 	position: relative;
 	text-align: center;
+	&_auto-width {
+		display: inline-block;
+	}
 }
