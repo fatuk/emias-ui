@@ -49,7 +49,12 @@
 			}
 			.input {
 				border-color: $red;
-				color: $red;
+				color: #444;
+			}
+		}
+		&.disabled {
+			.label__text {
+				color: #aaa;
 			}
 		}
 	}

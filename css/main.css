@@ -507,7 +507,9 @@ body {
     color: #e65c5c; }
   .form__row.error .input {
     border-color: #e65c5c;
-    color: #e65c5c; }
+    color: #444; }
+  .form__row.disabled .label__text {
+    color: #aaa; }
 .form__row-label {
   width: 225px;
   padding-left: 34px;
@@ -538,6 +540,9 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0) 50%);
   -webkit-transition: color 0.3s, border 0.3s;
           transition: color 0.3s, border 0.3s; }
+  .input[disabled] {
+    background: #eee;
+    border: solid 1px #ddd !important; }
 
 ::-webkit-input-placeholder {
   font-weight: normal; }
