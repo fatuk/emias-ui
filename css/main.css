@@ -512,6 +512,10 @@ td, th {
         background: #f0f0f0; }
       .form__row.disabled .number__btn:active {
         background: #f0f0f0; }
+    .form__row.disabled .switch__no, .form__row.disabled .switch__yes {
+      background: #f0f0f0;
+      border-color: #dddddd;
+      color: #aaaaaa; }
     .form__row.disabled .checkbox:hover .checkbox__label {
       color: #aaaaaa; }
     .form__row.disabled .checkbox:hover .checkbox__check {
@@ -802,6 +806,8 @@ body {
       .switch .input:checked + .switch__container .switch__space {
         -webkit-border-radius: 2px 0 0 2px !important;
                 border-radius: 2px 0 0 2px !important; }
+    .switch .input[disabled] {
+      cursor: not-allowed; }
   .switch__container {
     display: inline-block;
     position: absolute;

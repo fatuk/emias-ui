@@ -19,6 +19,9 @@
 				border-radius: 2px 0 0 2px !important;
 			}
 		}
+		&[disabled] {
+			cursor: not-allowed;
+		}
 	}
 	&__container {
 		display: inline-block;

@@ -82,6 +82,12 @@
 					background: #f0f0f0;
 				}
 			}
+			.switch__no,
+			.switch__yes {
+				background: #f0f0f0;
+				border-color: #dddddd;
+				color: #aaaaaa;
+			}
 			.checkbox {
 				&:hover {
 					.checkbox__label {
