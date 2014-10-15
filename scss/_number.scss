@@ -1,0 +1,59 @@
+input[type='number'] {
+	-moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.number {
+	@include clearfix();
+	display: inline-block;
+	&__container {
+		display: inline-block;
+		float: left;
+		margin-right: 16px;
+	}
+	&__btn {
+		cursor: pointer;
+		background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
+		width: 32px;
+		height: 32px;
+		border: solid 1px #ddd;
+		transition: background .3s;
+		.icon-plus,
+		.icon-minus {
+			transition: opacity .3s;
+			opacity: .7;
+		}
+		&:hover {
+			background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 50%);
+			.icon-plus,
+			.icon-minus {
+				opacity: 1;
+			}
+		}
+		&:active {
+			background: linear-gradient(to bottom,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
+		}
+		&_minus {
+			float: left;
+			border-right: none;
+		}
+		&_plus {
+			float: right;
+			border-left: none;
+		}
+	}
+	&__unit {
+		float: left;
+		font-size: 13px;
+		line-height: 32px;
+		color: #888;
+	}
+	.input {
+		width: 66px;
+		text-align: center;
+	}
+}

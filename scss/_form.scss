@@ -45,6 +45,12 @@
 				border-color: $light-blue;
 				color: $blue;
 			}
+			.number {
+				.input {
+					border-color: #ddd;
+					color: #444;
+				}
+			}
 		}
 		&.error {
 			.label__text {
@@ -59,6 +65,16 @@
 		&.disabled {
 			.label__text {
 				color: #aaa;
+			}
+			.number__btn {
+				background: #f0f0f0;
+				cursor: not-allowed;
+				&:hover {
+					background: #f0f0f0;
+				}
+				&:active {
+					background: #f0f0f0;
+				}
 			}
 		}
 	}

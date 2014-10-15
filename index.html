@@ -573,9 +573,73 @@
                     </div>
                 </div>
             </td>
-            <td class="form__row-aux">
-
+            <td class="form__row-aux"></td>
+        </tr>
+    </table>
+</div><div class="form">
+    <header class="form__header">
+        <h1 class="form__title">
+            Форма (number)
+        </h1>
+    </header>
+    <!-- Form row -->
+    <table class="form__row">
+        <tr>
+            <td class="form__row-label">
+                <label for="" class="label">
+                    <span class="label__text">
+                        Температура
+                    </span>
+                </label>
             </td>
+            <td class="form__row-field">
+                <!-- Switch -->
+                <div class="number">
+                    <div class="number__container">
+                        <div class="number__btn number__btn_minus">
+                            <i class="icon icon-minus"></i>
+                        </div>
+                        <input type="number" class="input" name="temperature" id="field-1" placeholder="Температура тела" min="33" max="42" step="0.1" value="35">
+                        <div class="number__btn number__btn_plus">
+                            <i class="icon icon-plus"></i>
+                        </div>
+                    </div>
+                    <div class="number__unit">
+                        град.
+                    </div>
+                </div>
+            </td>
+            <td class="form__row-aux"></td>
+        </tr>
+    </table>
+    <!-- Form row -->
+    <table class="form__row disabled">
+        <tr>
+            <td class="form__row-label">
+                <label for="" class="label">
+                    <span class="label__text">
+                        Температура
+                    </span>
+                </label>
+            </td>
+            <td class="form__row-field">
+                <!-- Switch -->
+                <div class="number">
+                    <div class="number__container">
+                        <div class="number__btn number__btn_minus">
+                            <i class="icon icon-minus"></i>
+                        </div>
+                        <input disabled type="number" class="input" name="temperature" id="field-1" placeholder="Температура тела" min="33" max="42" step="0.1" value="35">
+                        <div class="number__btn number__btn_plus">
+                            <i class="icon icon-plus"></i>
+                        </div>
+                    </div>
+                    <div class="number__unit">
+                        град.
+                    </div>
+                </div>
+            </td>
+            <td class="form__row-aux"></td>
         </tr>
     </table>
 </div>    </div>

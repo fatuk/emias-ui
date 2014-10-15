@@ -491,6 +491,9 @@ td, th {
     .form__row:hover .input, .form__row:hover .textarea {
       border-color: #3399cc;
       color: #297ca6; }
+    .form__row:hover .number .input {
+      border-color: #ddd;
+      color: #444; }
     .form__row.error .label__text {
       color: #e65c5c; }
     .form__row.error .input, .form__row.error .textarea {
@@ -498,6 +501,13 @@ td, th {
       color: #444; }
     .form__row.disabled .label__text {
       color: #aaa; }
+    .form__row.disabled .number__btn {
+      background: #f0f0f0;
+      cursor: not-allowed; }
+      .form__row.disabled .number__btn:hover {
+        background: #f0f0f0; }
+      .form__row.disabled .number__btn:active {
+        background: #f0f0f0; }
   .form__row-label {
     width: 225px;
     padding-left: 34px;
@@ -823,6 +833,58 @@ body {
     text-align: center;
     border: solid 1px #ddd;
     border-right: none; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+.number {
+  display: inline-block; }
+  .number:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .number__container {
+    display: inline-block;
+    float: left;
+    margin-right: 16px; }
+  .number__btn {
+    cursor: pointer;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.03)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 32px;
+    height: 32px;
+    border: solid 1px #ddd;
+    -webkit-transition: background 0.3s;
+            transition: background 0.3s; }
+    .number__btn .icon-plus, .number__btn .icon-minus {
+      -webkit-transition: opacity 0.3s;
+              transition: opacity 0.3s;
+      opacity: 0.7; }
+    .number__btn:hover {
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.03)), color-stop(50%, rgba(0, 0, 0, 0)));
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0) 50%); }
+      .number__btn:hover .icon-plus, .number__btn:hover .icon-minus {
+        opacity: 1; }
+    .number__btn:active {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.03)), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0) 100%); }
+    .number__btn_minus {
+      float: left;
+      border-right: none; }
+    .number__btn_plus {
+      float: right;
+      border-left: none; }
+  .number__unit {
+    float: left;
+    font-size: 13px;
+    line-height: 32px;
+    color: #888; }
+  .number .input {
+    width: 66px;
+    text-align: center; }
 
 body {
   font-family: 'Open Sans'; }
