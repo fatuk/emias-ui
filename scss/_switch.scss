@@ -1,0 +1,70 @@
+.switch {
+	display: inline-block;
+	position: relative;
+	width: 96px;
+	height: 32px;
+	overflow: hidden;
+	.input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+		opacity: 0;
+		cursor: pointer;
+		&:checked + .switch__container {
+			left: -48px
+		}
+	}
+	&__container {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: (48px * 3);
+		height: 32px;
+		transition: all .3s;
+	}
+	&__space {
+		position: absolute;
+		top: 0;
+		left: 48px;
+		width: 48px;
+		height: 32px;
+		border: solid 1px #ddd;
+	}
+	&__yes {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 48px;
+		height: 32px;
+		font-size: 10px;
+		font-weight: 600;
+		line-height: 32px;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		border: solid 1px $blue;
+		background: $light-blue;
+	}
+	&__no {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 48px;
+		height: 32px;
+		background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
+		font-size: 10px;
+		font-weight: 600;
+		line-height: 32px;
+		color: #888;
+		text-transform: uppercase;
+		text-align: center;
+		border: solid 1px #ddd;
+		border-right: none;
+	}
+}
