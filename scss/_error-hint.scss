@@ -8,6 +8,8 @@
 	border-radius: 5px;
 	transform: translateX(-50%);
 	@include no-break();
+	@include no-select();
+	cursor: default;
 	&__text {
 		display: inline-block;
 		font-size: 13px;

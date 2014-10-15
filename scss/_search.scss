@@ -1,0 +1,18 @@
+.search {
+	position: relative;
+	.icon-search {
+		position: absolute;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+	}
+	.icon-clear {
+		position: absolute;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+	}
+	.input {
+		padding-left: 32px;
+	}
+}

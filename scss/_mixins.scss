@@ -111,10 +111,14 @@
     white-space: nowrap;
 }
 
-@mixin clearfix {
+@mixin clearfix() {
   &:after {
     content:"";
     display:table;
     clear:both;
   }
+}
+
+@mixin no-select() {
+  user-select: none;
 }

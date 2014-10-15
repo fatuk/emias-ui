@@ -341,20 +341,6 @@ td, th {
 /************
  Examples
 ************/
-body {
-  font-family: 'Open Sans'; }
-
-*:focus {
-  outline: 0; }
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.container {
-  width: 1120px;
-  margin: 0 auto; }
-
 /* Open Sans @font-face kit */
 /* BEGIN Light */
 /* @font-face {
@@ -545,7 +531,8 @@ body {
   .input[disabled] {
     background: #eee;
     color: #444 !important;
-    border: solid 1px #ddd !important; }
+    border: solid 1px #ddd !important;
+    cursor: not-allowed; }
 
 ::-webkit-input-placeholder {
   font-weight: normal; }
@@ -583,7 +570,10 @@ body {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  white-space: nowrap; }
+  white-space: nowrap;
+  -webkit-user-select: none;
+          user-select: none;
+  cursor: default; }
   .error-hint__text {
     display: inline-block;
     font-size: 13px;
@@ -680,7 +670,8 @@ body {
   .textarea[disabled] {
     background: #eee;
     color: #444 !important;
-    border: solid 1px #ddd !important; }
+    border: solid 1px #ddd !important;
+    cursor: not-allowed; }
 
 .date {
   width: 175px;
@@ -713,3 +704,73 @@ body {
 .date-range .input {
   width: 150px;
   float: left; }
+
+.icon {
+  display: inline-block; }
+
+.icon-calendar {
+  background: url('../img/calendar.png');
+  width: 32px;
+  height: 32px; }
+
+.icon-plus {
+  background: url('../img/plus.png') no-repeat center;
+  width: 32px;
+  height: 32px; }
+
+.icon-minus {
+  background: url('../img/minus.png') no-repeat center;
+  width: 32px;
+  height: 32px; }
+
+.icon-search {
+  background: url('../img/search.png') no-repeat center;
+  width: 32px;
+  height: 32px; }
+
+.icon-drop-down {
+  background: url('../img/drop-down.png') no-repeat center;
+  width: 32px;
+  height: 32px; }
+
+.icon-checked {
+  background: url('../img/checked.png') no-repeat center;
+  width: 32px;
+  height: 32px; }
+
+.icon-clear {
+  background: url('../img/clear.png') no-repeat center;
+  width: 32px;
+  height: 32px; }
+
+.search {
+  position: relative; }
+  .search .icon-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer; }
+  .search .icon-clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer; }
+  .search .input {
+    padding-left: 32px; }
+
+body {
+  font-family: 'Open Sans'; }
+
+*:focus {
+  outline: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  width: 1120px;
+  margin: 0 auto; }
+
+.hide {
+  display: none; }
