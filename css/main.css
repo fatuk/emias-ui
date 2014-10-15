@@ -695,5 +695,21 @@ body {
   .date .input {
     padding-right: 30px; }
 
-.date-range {
-  width: 145px; }
+.date-range:after {
+  content: "";
+  display: table;
+  clear: both; }
+.date-range__divider {
+  float: left;
+  width: 30px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  background: #eee;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd; }
+.date-range .input {
+  width: 150px;
+  float: left; }
