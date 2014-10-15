@@ -41,6 +41,15 @@
 			.checkbox__check {
 				border-color: #888;
 			}
+			.radio__label {
+				color: #444;
+			}
+			.radio__dot {
+				border-color: #444;
+				&:before {
+					background: #444 !important;
+				}
+			}
 		}
 		&:hover {
 			.label__text {
@@ -71,6 +80,11 @@
 		&.disabled {
 			.label__text {
 				color: #aaa;
+			}
+			.search {
+				.icon {
+					cursor: not-allowed;
+				}
 			}
 			.number__btn {
 				background: #f0f0f0;
@@ -105,6 +119,24 @@
 			.checkbox__check {
 				background-color: #eeeeee;
 				border-color: #dddddd;
+			}
+			.radio {
+				cursor: not-allowed;
+				.radio__dot {
+					border-color: #dddddd;
+					&:before {
+						background: #aaa !important;
+					}
+				}
+				&:hover {
+					.radio__label {
+						color: #aaaaaa;
+					}
+					.radio__check {
+						background-color: #eeeeee;
+						border-color: #dddddd;
+					}
+				}
 			}
 		}
 	}

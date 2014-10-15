@@ -1,19 +1,30 @@
-.checkbox {
+.radio {
 	position: relative;
 	display: inline-block;
 	@include clearfix();
-	input[type="checkbox"] {
+	input[type="radio"] {
 		position: absolute;
 		top: 0;
 		left: 0;
 		opacity: 0;
-		&:checked + .checkbox__check {
-			background-image: url('../img/checked.png');
-			background-repeat: no-repeat;
-			background-position: center;
+		&:checked + .radio__dot {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -4px;
+				margin-left: -4px;
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				background: #666;
+				border-radius: 50%;
+			}
 		}
 	}
-	&__check {
+	&__dot {
+		position: relative;
 		float: left;
 		width: 16px;
 		height: 16px;
@@ -21,6 +32,7 @@
 		background-color: #f9f9f9;
 		margin-right: 8px;
 		transition: border .3s;
+		border-radius: 50%
 	}
 	&__label {
 		font-size: 13px;
@@ -30,10 +42,10 @@
 		transition: color .3s;
 	}
 	&:hover {
-		.checkbox__check {
+		.radio__dot {
 			border-color: $light-blue;
 		}
-		.checkbox__label {
+		.radio__label {
 			color: $blue;
 		}
 	}
