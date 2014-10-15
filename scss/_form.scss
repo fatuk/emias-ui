@@ -35,6 +35,12 @@
 				border-color: #444;
 				color: #444;
 			}
+			.checkbox__label {
+				color: #444;
+			}
+			.checkbox__check {
+				border-color: #888;
+			}
 		}
 		&:hover {
 			.label__text {
@@ -75,6 +81,24 @@
 				&:active {
 					background: #f0f0f0;
 				}
+			}
+			.checkbox {
+				&:hover {
+					.checkbox__label {
+						color: #aaaaaa;
+					}
+					.checkbox__check {
+						background-color: #eeeeee;
+						border-color: #dddddd;
+					}
+				}
+			}
+			.checkbox__label {
+				color: #aaaaaa;
+			}
+			.checkbox__check {
+				background-color: #eeeeee;
+				border-color: #dddddd;
 			}
 		}
 	}

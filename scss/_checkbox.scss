@@ -1,0 +1,38 @@
+.checkbox {
+	position: relative;
+	display: inline-block;
+	@include clearfix();
+	.input {
+		position: absolute;
+		opacity: 0;
+		&:checked + .checkbox__check {
+			background-image: url('../img/checked.png');
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+	&__check {
+		float: left;
+		width: 16px;
+		height: 16px;
+		border: solid 1px #ddd;
+		background-color: #f9f9f9;
+		margin-right: 8px;
+		transition: border .3s;
+	}
+	&__label {
+		font-size: 13px;
+		line-height: 16px;
+		color: #888;
+		float: left;
+		transition: color .3s;
+	}
+	&:hover {
+		.checkbox__check {
+			border-color: $light-blue;
+		}
+		.checkbox__label {
+			color: $blue;
+		}
+	}
+}

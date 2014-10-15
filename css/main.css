@@ -486,6 +486,10 @@ td, th {
     .form__row.active .input, .form__row.active .textarea {
       border-color: #444;
       color: #444; }
+    .form__row.active .checkbox__label {
+      color: #444; }
+    .form__row.active .checkbox__check {
+      border-color: #888; }
     .form__row:hover .label__text {
       color: #297ca6; }
     .form__row:hover .input, .form__row:hover .textarea {
@@ -508,6 +512,16 @@ td, th {
         background: #f0f0f0; }
       .form__row.disabled .number__btn:active {
         background: #f0f0f0; }
+    .form__row.disabled .checkbox:hover .checkbox__label {
+      color: #aaaaaa; }
+    .form__row.disabled .checkbox:hover .checkbox__check {
+      background-color: #eeeeee;
+      border-color: #dddddd; }
+    .form__row.disabled .checkbox__label {
+      color: #aaaaaa; }
+    .form__row.disabled .checkbox__check {
+      background-color: #eeeeee;
+      border-color: #dddddd; }
   .form__row-label {
     width: 225px;
     padding-left: 34px;
@@ -894,6 +908,41 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   .number .input {
     width: 66px;
     text-align: center; }
+
+.checkbox {
+  position: relative;
+  display: inline-block; }
+  .checkbox:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .checkbox .input {
+    position: absolute;
+    opacity: 0; }
+    .checkbox .input:checked + .checkbox__check {
+      background-image: url('../img/checked.png');
+      background-repeat: no-repeat;
+      background-position: center; }
+  .checkbox__check {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: solid 1px #ddd;
+    background-color: #f9f9f9;
+    margin-right: 8px;
+    -webkit-transition: border 0.3s;
+            transition: border 0.3s; }
+  .checkbox__label {
+    font-size: 13px;
+    line-height: 16px;
+    color: #888;
+    float: left;
+    -webkit-transition: color 0.3s;
+            transition: color 0.3s; }
+  .checkbox:hover .checkbox__check {
+    border-color: #3399cc; }
+  .checkbox:hover .checkbox__label {
+    color: #297ca6; }
 
 body {
   font-family: 'Open Sans'; }
