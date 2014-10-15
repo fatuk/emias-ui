@@ -785,6 +785,9 @@ body {
     cursor: pointer; }
     .switch .input:checked + .switch__container {
       left: -48px; }
+      .switch .input:checked + .switch__container .switch__space {
+        -webkit-border-radius: 2px 0 0 2px !important;
+                border-radius: 2px 0 0 2px !important; }
   .switch__container {
     display: inline-block;
     position: absolute;
@@ -800,7 +803,9 @@ body {
     left: 48px;
     width: 48px;
     height: 32px;
-    border: solid 1px #ddd; }
+    border: solid 1px #ddd;
+    -webkit-border-radius: 0 2px 2px 0;
+            border-radius: 0 2px 2px 0; }
   .switch__yes {
     display: inline-block;
     position: absolute;
@@ -815,7 +820,9 @@ body {
     text-transform: uppercase;
     text-align: center;
     border: solid 1px #297ca6;
-    background: #3399cc; }
+    background: #3399cc;
+    -webkit-border-radius: 0 2px 2px 0;
+            border-radius: 0 2px 2px 0; }
   .switch__no {
     display: inline-block;
     position: absolute;
@@ -832,7 +839,9 @@ body {
     text-transform: uppercase;
     text-align: center;
     border: solid 1px #ddd;
-    border-right: none; }
+    border-right: none;
+    -webkit-border-radius: 2px 0 0 2px;
+            border-radius: 2px 0 0 2px; }
 
 input[type='number'] {
   -moz-appearance: textfield; }
