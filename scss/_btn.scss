@@ -1,3 +1,29 @@
 .btn {
-	color: red;
+	display: inline-block;
+	height: 32px;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	background: none;
+	font-size: 13px;
+	line-height: 30px;
+	color: #999;
+	padding: 0 24px;
+	text-decoration: none;
+	float: left;
+	margin-right: 16px;
+	transition: color .3s, border .3s;
+	cursor: pointer;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		border-color: #888;
+		color: #555;
+	}
+	&[disabled] {
+		cursor: not-allowed;
+		background: #f7f7f7;
+		border-color: #ddd;
+		color: #aaa;
+	}
 }

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMIAS - диагноз</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <header class="form__header">
+                <h1 class="form__title">
+                    Основной диагноз
+                </h1>
+                <!-- Template menu -->
+                <div class="form-menu">
+                    <ul class="form-menu__list">
+                        <li class="form-menu__item">
+                            <a href="#" class="form-menu__link">
+                                Шаблон
+                            </a>
+                        </li>
+                        <li class="form-menu__item">
+                            <a href="#" class="form-menu__link">
+                                Сохранить
+                            </a>
+                        </li>
+                        <li class="form-menu__item">
+                            <a href="#" class="form-menu__link form-menu__link_dropdown">
+                                Выбрать
+                                <i class="icon icon-drop-down"></i>
+                            </a>
+                            <!-- Dropdown menu -->
+                            <div class="dropdown-menu">
+                                <ul class="dropdown-menu__list">
+                                    <li class="dropdown-menu__item">
+                                        <a href="#" class="dropdown-menu__link">
+                                            Название шаблона
+                                        </a>
+                                        <a href="#" class="dropdown-menu__clear">
+                                            <i class="icon icon-clear"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-menu__item">
+                                        <a href="#" class="dropdown-menu__link">
+                                            Название шаблона
+                                        </a>
+                                        <a href="#" class="dropdown-menu__clear">
+                                            <i class="icon icon-clear"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-menu__item">
+                                        <a href="#" class="dropdown-menu__link">
+                                            Название шаблона
+                                        </a>
+                                        <a href="#" class="dropdown-menu__clear">
+                                            <i class="icon icon-clear"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="dropdown-menu__footer">
+                                    <a href="#" class="dropdown-menu__btn dropdown-menu__btn_prev">
+                                        <i class="icon icon-prev"></i>
+                                        Пред.
+                                    </a>
+                                    <div class="dropdown-menu__pages">
+                                        10 из 20
+                                    </div>
+                                    <a href="#" class="dropdown-menu__btn dropdown-menu__btn_next">
+                                        След.
+                                        <i class="icon icon-next"></i>
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- Form row -->
+            <table class="form__row error">
+                <tr>
+                    <td class="form__row-label">
+                        <label for="input-text-1" class="label">
+                            <span class="label__text">
+                                Название поля
+                                <sup class="label__required">*</sup>
+                            </span>
+                        </label>
+                    </td>
+                    <td class="form__row-field">
+                        <div class="field">
+                            <input type="text" class="input" name="" id="input-text-1" placeholder="error">
+                            <div class="animated fadeIn error-hint">
+                                <div class="error-hint__text">
+                                    Обязательное поле
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row-hint">
+                            Текст подсказки
+                        </div>
+                    </td>
+                    <td class="form__row-aux">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="vendors/plugins.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

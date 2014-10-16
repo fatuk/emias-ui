@@ -454,7 +454,32 @@ td, th {
 } */
 /* END Extrabold Italic */
 .btn {
-  color: red; }
+  display: inline-block;
+  height: 32px;
+  border: solid 1px #ccc;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: #999;
+  padding: 0 24px;
+  text-decoration: none;
+  float: left;
+  margin-right: 16px;
+  -webkit-transition: color 0.3s, border 0.3s;
+          transition: color 0.3s, border 0.3s;
+  cursor: pointer; }
+  .btn:last-child {
+    margin-right: 0; }
+  .btn:hover {
+    border-color: #888;
+    color: #555; }
+  .btn[disabled] {
+    cursor: not-allowed;
+    background: #f7f7f7;
+    border-color: #ddd;
+    color: #aaa; }
 
 .form {
   margin-bottom: 40px; }
