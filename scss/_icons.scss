@@ -2,7 +2,7 @@
 	display: inline-block;
 }
 .icon-calendar {
-	background: url('../img/calendar.png');
+	background: url('../img/calendar.png') no-repeat center;
 	width: 32px;
 	height: 32px;
 }
@@ -33,6 +33,16 @@
 }
 .icon-clear {
 	background: url('../img/clear.png') no-repeat center;
+	width: 32px;
+	height: 32px;
+}
+.icon-prev {
+	background: url('../img/prev.png') no-repeat center;
+	width: 32px;
+	height: 32px;
+}
+.icon-next {
+	background: url('../img/next.png') no-repeat center;
 	width: 32px;
 	height: 32px;
 }

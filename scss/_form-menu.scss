@@ -1,0 +1,48 @@
+.form-menu {
+	position: absolute;
+	top: 0;
+	right: 16px;
+	height: 32px;
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		@include clearfix();
+	}
+	&__item {
+		float: left;
+		&.expanded {
+			background: #444444;
+			.form-menu__link {
+				color: #fff;
+			}
+			.icon-drop-down {
+				background: url('../img/drop-down-white.png') no-repeat center;
+			}
+			.dropdown-menu {
+				display: block;
+			}
+		}
+	}
+	&__link {
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: 600;
+		line-height: 32px;
+		color: #888;
+		padding: 0 16px;
+		.icon {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		&_dropdown {
+			padding-right: 30px;
+		}
+	}
+	&__dropdown {
+
+	}
+}
