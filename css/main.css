@@ -501,9 +501,6 @@ td, th {
     .form__row:hover .input, .form__row:hover .textarea {
       border-color: #3399cc;
       color: #297ca6; }
-    .form__row:hover .number .input {
-      border-color: #ddd;
-      color: #444; }
     .form__row.error .label__text {
       color: #e65c5c; }
     .form__row.error .input, .form__row.error .textarea {
