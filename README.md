@@ -3,7 +3,8 @@ emias-ui
 
 UI components for emias
 
-https://mc.usetech.ru/redmine/issues/10151
+Repo: https://github.com/fatuk/emias-ui
+Task: https://mc.usetech.ru/redmine/issues/10151
 
 
 Setup project:
