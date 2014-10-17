@@ -139,6 +139,7 @@
 		width: 225px;
 		padding-left: 34px;
 		line-height: 1;
+		text-align: right;
 	}
 	&__row-field {
 		width: 512px;
@@ -154,5 +155,9 @@
 		color: #aaa;
 		padding-left: 9px;
 		margin-top: 7px;
+	}
+	&__cell {
+		float: left;
+		margin-right: 32px;
 	}
 }
