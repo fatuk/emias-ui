@@ -1,6 +1,6 @@
 module.exports = {
     options: {
-        sourceMap: true
+        style: 'compressed'
     },
     dist: {
         files: {
