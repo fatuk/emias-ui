@@ -1,0 +1,30 @@
+
+.main-menu{
+  float: left;
+  font-size: 12px;
+  padding: $site-padding 0;
+  text-transform: uppercase;
+  .nav{
+    li{
+      padding: 0 $site-padding * 2;
+      a{
+        color: $green-sea;
+        padding: $site-padding 0;
+        line-height: $site-padding * 2;
+        &:hover{
+          background-color: transparent;
+          color: $white;
+        }
+      }
+      &.active{
+        a{
+          background-color: transparent;
+          color: $white;
+        }
+      }
+    }
+    .sub-menu{
+      display: none;
+    }
+  }
+}

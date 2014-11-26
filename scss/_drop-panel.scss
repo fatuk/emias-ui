@@ -1,0 +1,10 @@
+.drop-panel {
+	&__footer {
+      .btn {
+        .icon{
+          position: relative;
+          top: -$site-padding;
+        }
+      }
+	}
+}

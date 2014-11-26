@@ -1,0 +1,43 @@
+.form-type-1 {
+    clear: both;
+    color: $gray-darken-1;
+    font-size: 13px;
+    &__container {
+        padding: $site-padding;
+    }
+    &__footer {
+        overflow: hidden;
+        padding: $site-padding;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        overflow: hidden;
+        padding: $site-padding;
+    }
+    &__title {
+        clear: both;
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        padding: $site-padding;
+        text-transform: uppercase;
+        .btn {
+          float: right;
+          margin-top: -8px;
+        }
+    }
+    &__label {
+        font-size: 13px;
+        float: left;
+        padding: $site-padding;
+        width: $site-column * 2 + $site-padding * 6;
+    }
+    &__value {
+        overflow: hidden;
+    }
+}

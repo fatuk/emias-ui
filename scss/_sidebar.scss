@@ -1,0 +1,52 @@
+.sidebar {
+  position: relative;
+  float: left;
+  &__container {
+    background: $base-color-darken;
+    height: $site-column * 9 + $site-padding * 3;
+    padding: $site-padding;
+    width: $site-column * 2 + $site-padding * 6;
+    .btn {
+      background-color: $base-color-dark;
+      border: $green-sea-darken 1px solid;
+      float: none;
+      font-size: 11px;
+      height: $site-padding * 5;
+      line-height: 8px;
+      padding: $site-padding * 2;
+      text-transform: uppercase;
+      width: 100%;
+      &:hover {
+        background-color: $base-color-darken;
+        border-color: $green-sea;
+      }
+
+    }
+  }
+  &__list {
+  }
+  &__item {
+    padding: $site-padding 0;
+  }
+  &__title {
+    color: $white;
+    font-size: 11px;
+    line-height: 16px;
+    margin: $site-padding 0;
+    text-align: center;
+    text-transform: uppercase;
+    @include clearfix();
+  }
+
+  &__info-1{
+      background-color: #fbcfbe;
+      font-size: 11px;
+      width: $site-column * 4 + $site-padding * 4;
+      .sidebar__title {
+        color: $black;
+        margin: 0;
+        padding: $site-padding * 3;
+        text-align: left;
+      }
+  }
+}

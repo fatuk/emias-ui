@@ -1,16 +1,16 @@
 .search {
 	position: relative;
 	.icon-search {
+		cursor: pointer;
+		left: 0;
 		position: absolute;
 		top: 0;
-		left: 0;
-		cursor: pointer;
 	}
 	.icon-clear {
-		position: absolute;
-		top: 0;
-		right: 0;
 		cursor: pointer;
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 	.input {
 		padding-left: 32px;

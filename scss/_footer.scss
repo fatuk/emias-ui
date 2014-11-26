@@ -1,0 +1,50 @@
+.footer {
+	background: $base-color-darken;
+	bottom: 0;
+    clear: both;
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+	@include clearfix();
+	&__info {
+        float:left;
+        line-height: 18px;
+        margin: $site-padding / 2 0;
+		padding: $site-padding;
+        text-align: center;
+		width: $site-column * 2 + $site-padding * 6;
+		@include clearfix();
+		.icon {
+			color: #608080;
+            float: left;
+			font-size: 20px;
+			width: auto;
+		}
+	}
+	&__info-text {
+		color: #608080;
+        display: inline-block;
+		font-size: 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&__info-count {
+		color: $white;
+	}
+	&__date {
+		color: #f2ffff;
+        float: right;
+		font-size: 11px;
+		font-weight: 600;
+        line-height: 14px;
+		padding: $site-padding;
+		text-align: center;
+		width: $site-column + ($site-padding * 5);
+	}
+	&__date-time {
+
+	}
+	&__date-day {
+	}
+}

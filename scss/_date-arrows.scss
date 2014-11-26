@@ -1,0 +1,61 @@
+.date-arrows {
+	@include clearfix();
+	display: inline-block;
+	height: $site-padding * 4;
+	&__inner {
+		display: inline-block;
+	}
+	&__container {
+		display: inline-block;
+		float: left;
+		margin-right: $site-padding * 2;
+	}
+	&__btn {
+		background: #fafafa;
+		border: solid 1px #ddd;
+		cursor: pointer;
+		height: $site-padding * 4;
+		transition: background .3s;
+		width: $site-padding * 4;
+		.icon-chevron-left,
+		.icon-chevron-right {
+			color: #aaaaaa;
+			float: left;
+			font-size: 70%;
+			text-align: center;
+			transition: opacity .3s;
+			width: 100%;
+			&:before {
+				line-height: ($site-padding * 4 - 2);
+			}
+		}
+		&:hover {
+			.icon-chevron-left,
+			.icon-chevron-right {
+				opacity: 1;
+			}
+		}
+		&:active {
+
+		}
+		&_prev {
+			border-right: none;
+			float: left;
+		}
+		&_next {
+			border-left: none;
+			float: right;
+		}
+	}
+	&__unit {
+		color: #888;
+		float: left;
+		font-size: 13px;
+		line-height: $site-padding * 4;
+	}
+	.input {
+		float: left;
+		text-align: center;
+		width: $site-padding * 22;
+	}
+}

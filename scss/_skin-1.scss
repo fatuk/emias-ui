@@ -1,0 +1,60 @@
+/*==============colors==============*/
+
+//brand-colors, ...
+$base-color-lighten-1: #e6f2f2;
+$base-color-lighten-1-dark: darken($base-color-lighten-1, 10%);
+
+$base-color-lighten: #c3e5e5;
+$base-color-light: #8fbfbf;
+$base-color: #2e9999;
+$base-color-dark: #408080;
+$base-color-darken: #204040;
+$base-color-darken-1: #193333;
+
+//brand-danger, ...
+$color-2a: #e55c5c;
+$color-2b: #d93636;
+$color-2c: #e52222;
+
+//brand-warning, ...
+$color-3a: #ffaa00;
+$color-3b: #ff9500;
+$color-3c: #ff7f00;
+
+//brand-success, ...
+$color-4a: #2db386;
+$color-4b: #53a661;
+$color-4c: #269973;
+
+$color-5a: #fff4bf;
+$color-5b: #ffea7f;
+
+//brand-primary, ...
+$color-6a: #3399cc;
+$color-6b: #297ca6;
+
+$color-7a: #b6bfbf;
+$color-7b: #8a9999;
+
+$color-8: #8068a7;
+
+/*----B&W----*/
+$white-lighten: #fff;
+$white: #fafafa;
+$white-darken: #f0f0f0;
+
+$gray-light: #eee;
+$gray: #ddd;
+$gray-darken: #ccc;
+$gray-darken-1: #bbb;
+$gray-darken-2: #777;
+
+$black: #444;
+$black-darken: #000;
+/*=================================*/
+
+/*
+$brand-info-light: #5bc0de;
+$brand-info: #5bc0de;
+$brand-info-dark: #5bc0de;
+*/

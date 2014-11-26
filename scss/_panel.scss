@@ -1,0 +1,135 @@
+.panel {
+	border-radius: 0;
+	border: solid 0px $gray; //исправить
+    margin-bottom: $site-padding;
+	padding: $site-padding;
+	&__header {
+		background: $panel-color;
+        margin: -($site-padding + 1px);
+        margin-bottom: 0;
+        padding: $site-padding;
+        position: relative;
+		@include clearfix();
+		.icon {
+			color: $panel-font-color;
+			float: left;
+			font-size: 120%;
+			margin-right: $site-padding;
+            margin-top: $site-padding / 2;
+			width: auto;
+		}
+	}
+	&__title {
+		color: $panel-font-color;
+		float: left;
+		font-size: 14px;
+		font-weight: 400;
+        line-height: 24px;
+		margin: 0;
+	}
+	&__search {
+        background: #fafafa;
+		border-bottom: solid 1px #dddddd;
+        margin: 0 (-$site-padding) $site-padding (-$site-padding);
+        padding: ($site-padding * 2);
+        position: relative;
+		.form {
+			margin: 0;
+		}
+	}
+	&__content {
+		// padding-bottom: $site-padding;
+		// padding: 0 $site-padding;
+		@include clearfix();
+		&_no-padding {
+			padding: 0;
+		}
+	}
+	&__column {
+		float: left;
+		width: $site-padding * 105;
+		&_examinations {
+			width: $site-padding * 69;
+		}
+	}
+	.form__row {
+		padding-left: $site-padding;
+	}
+	&_examination-plan {
+		float: left;
+        height: $site-column * 9 + $site-padding * 3;
+        overflow: hidden;
+		margin-left: $site-padding;
+	}
+	&__filter {
+		background: #f8f8f8;
+		border-bottom: solid 1px #dedede;
+		padding: 0 $site-padding;
+		.checkbox {
+			display: block;
+		}
+	}
+	&__filter-inner {
+		display: table;
+		height: $site-padding * 8;
+		width: 100%;
+	}
+	&__filter-title {
+		color: #339999;
+		display: table-cell;
+		font-size: 13px;
+		font-weight: 600;
+		margin: 0;
+		padding: 0 $site-padding;
+		vertical-align: middle;
+	}
+	&__filter-field {
+		display: table-cell;
+		padding: 0 $site-padding;
+		vertical-align: middle;
+		&:last-child {
+			box-sizing: content-box;
+		}
+		&_select {
+			width: $site-padding * 29;
+		}
+		&_checkbox {
+			width: $site-padding * 20;
+		}
+	}
+	&__controls {
+		border-bottom: solid 1px #dedede;
+		padding: 0 $site-padding;
+	}
+	&__controls-inner {
+		display: table;
+		height: $site-padding * 8;
+		width: 100%;
+	}
+	&__controls-title {
+		color: #339999;
+		display: table-cell;
+		font-size: 13px;
+		font-weight: 600;
+		margin: 0;
+		padding: 0 $site-padding;
+		vertical-align: middle;
+	}
+	&__controls-container {
+		display: table-cell;
+		padding: 0 $site-padding;
+		text-align: right;
+		vertical-align: middle;
+	}
+	.btn {
+		float: none;
+	}
+	&__iframe {
+		height: 100%;
+		width: 100%;
+		border: solid 1px #dddddd;
+	}
+	&__iframe-container {
+		padding: $site-padding * 2;
+	}
+}

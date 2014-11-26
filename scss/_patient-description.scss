@@ -1,0 +1,127 @@
+.patient-description {
+    background-color: $white-lighten;
+    border: $gray-darken-1 1px solid;
+    margin: $site-padding;
+    position: relative;
+    &__container {
+        border-bottom: $gray-darken-1 1px solid;
+        font-size: 12px;
+        padding: $site-padding * 2;
+        @include clearfix();
+    }
+    &__main-info {
+        float: left;
+        padding: $site-padding;
+        width: $site-column * 6 + $site-padding * 8;
+    }
+    &__name {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    &__surname {
+        text-transform: uppercase;
+    }
+    &__attribute {
+    }
+    &__attribute-item {
+    }
+    &__date {
+        float: left;
+        margin-right: $site-padding * 15;
+        padding: $site-padding;
+        width: $site-column * 3 - $site-padding * 2;
+    }
+    &__date-item {
+    }
+    &__label {
+        color: $gray-darken-2;
+    }
+    &__value {
+        color: $text-color;
+    }
+    &__insurance {
+        float: left;
+        padding: $site-padding;
+        width: $site-column * 8 + $site-padding * 7;
+    }
+    &__insurance-item {
+    }
+
+
+    &__extra-info {
+      background-color: $gray-light;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 0 $site-padding;
+      position: relative;
+      @include clearfix();
+    }
+    &__coll-1 {
+      float: left;
+      padding: $site-padding;
+      width: $site-column * 7 + $site-padding * 2;
+    }
+    &__coll-2 {
+      border-left: $gray-darken-1 1px solid;
+      float: left;
+      padding: $site-padding;
+      width: $site-column * 7 + $site-padding * 3;
+    }
+    &__coll-3 {
+      border-left: $gray-darken-1 1px solid;
+      float: left;
+      padding: $site-padding;
+      width: $site-column * 6 + $site-padding * 5;
+    }
+    &__more {
+      border-left: $gray-darken-1 1px solid;
+      color: $gray-darken-1;
+      float: right;
+      margin-right: -$site-padding;
+      padding: $site-padding;
+      position: relative;
+      text-align: center;
+      width: $site-padding * 7;
+      .icon{
+        position: relative;
+        top: $site-padding / 2;
+      }
+    }
+    &__opened {
+      background: $white-lighten;
+      border: $gray-darken-1 1px solid;
+      clear: both;
+      display: none;
+      left: -1px;
+      padding: $site-padding;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      z-index: 10;
+      &:before {
+        content: "";
+        background-color: $gray-darken-1;
+        display: block;
+        left: $site-column * 7 + $site-padding * 3;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        width: 1px;
+      }
+      &:after {
+        content: "";
+        background-color: $gray-darken-1;
+        display: block;
+        left: ($site-column * 7 + $site-padding * 3) * 2;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        width: 1px;
+      }
+    }
+    &.opened {
+      .patient-description__opened {
+        display: block;
+      }
+    }
+}

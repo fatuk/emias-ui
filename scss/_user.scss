@@ -1,0 +1,59 @@
+.user {
+	color: $green-sea;
+	cursor: pointer;
+	list-style: none;
+	margin: 0;
+	padding: $site-padding;
+	width: $site-column * 3;
+	&__avatar {
+		height: $site-padding * 4;
+		margin-right: $site-padding;
+		width: $site-padding * 4;
+	}
+	&__container {
+		display: block;
+		float: left;
+		font-size: 12px;
+		line-height: 12px;
+		overflow: hidden;
+		padding: $site-padding / 2 0;
+		width: $site-padding * 16;
+	}
+	&__name {
+		color: $white;
+	}
+	&__speciality {
+		font-size: 10px;
+		line-height: 12px;
+	}
+	&__more {
+		display: block;
+		float: left;
+        font-size: 12px;
+		line-height: $site-padding * 2;
+		padding: $site-padding;
+		width: $site-padding * 4;
+	}
+	.btn {
+		margin: $site-padding * 2;
+		width: 90%;
+		@include clearfix();
+	}
+    &.open{
+      background-color: $base-color-darken-1;
+      .dropdown-menu{
+        background-color: $gray;
+        border: $base-color-darken-1 $site-padding solid;
+        border-top: none;
+        border-radius: 0;
+        box-shadow: none;
+        left: inherit;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 100%;
+        width: ($site-column * 5) + $site-padding;
+        z-index: 15;
+      }
+    }
+}

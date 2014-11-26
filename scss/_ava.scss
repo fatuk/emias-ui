@@ -1,0 +1,22 @@
+
+.ava{
+  background: url('../images/placeholder.jpg') no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  float: left;
+  &.small{
+    height: $site-padding * 4;
+    margin-right: $site-padding;
+    width: $site-padding * 4;
+  }
+  &.med{
+    height: $site-padding * 10;
+    margin-right: $site-padding * 2;
+    width: $site-padding * 10;
+  }
+  &.big{
+    height: $site-padding * 12;
+    margin-right: $site-padding * 2;
+    width: $site-padding * 12;
+  }
+}

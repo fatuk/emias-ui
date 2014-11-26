@@ -1,4 +1,83 @@
-// Colors
+@import 'skin-1';
+
+$border-radius-base: 0;
+/*----fonts----*/
+$brand-font: 'Segoe UI', sans-serif;
+$font-family-base: 'OpenSansRegular', sans-serif;
+$font-size-base: 16px;
+$base-font-size: $font-size-base;
+/*---general---*/
+$grid-columns: 16;
+$container-md: 960px;
+$container-lg: 1200px;
+$site-padding: 8px;
+$site-column: $site-padding * 9;
+/*---colors----*/
+$alert-lighten: #ff6666;
+$alert: #e65c5c;
+$alert-darken: #bf4d4d;
+
+$green-sea-lighten: #60bfbf;
+$green-sea: #8fbfbf;
+$green-sea-darken: #418080;
+
+$black: #333;
+$black-darken: #000;
+
+$gray-light: #eee;
+$gray: #ddd;
+$gray-darken: #ccc;
+$gray-darken-1: #bbb;
+$gray-darken-2: #777;
+
+$white-lighten: #fff;
+$white: #fefefe;
+$white-darken: #f0f0f0;
+
+
+
+// Old
 $blue: #297ca6;
 $light-blue: #3399cc;
-$red: #e65c5c;
+
+/*---colors-classification---*/
+
+
+$light-type: #333;
+$light-type-lighten: #000;
+$light-type-darken: #000;
+/*-------------*/
+$body-bg: $gray-light;
+$input-color: $gray-darken-1;
+$text-color: $black;
+
+
+
+$brand-primary: $color-6a;
+$brand-primary-dark: $color-6b;
+
+$brand-success-light: $color-4a;
+$brand-success: $color-4b;
+$brand-success-dark: $color-4c;
+
+$brand-warning-light: $color-3a;
+$brand-warning: $color-3b;
+$brand-warning-dark: $color-3c;
+
+$brand-danger-light:  $color-2a;
+$brand-danger:  $color-2b;
+$brand-danger-dark:  $color-2c;
+
+// Panel colors
+$panel-color: $base-color-dark;
+$panel-font-color: $white;
+
+// Login context
+$context-header: $base-color-dark;
+
+// Modal window
+$modal-header-color: $base-color-dark;
+$modal-footer-color: $base-color-lighten-1;
+
+// Sheet colors
+$sheet-main-color: $base-color-dark;

@@ -1,0 +1,18 @@
+a,
+button,
+input,
+textarea,
+select {
+	&:focus {
+		outline: none;
+	}
+	&::-moz-focus-inner {
+		border: 0;
+	}
+}
+
+* {
+	&:focus {
+		outline: none !important;
+	}
+}

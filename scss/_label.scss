@@ -1,20 +1,21 @@
 .label {
-	position: relative;
 	display: inline-block;
 	font-size: 13px;
-	font-weight: 600;
-	white-space: normal;
+	font-weight: normal;
 	padding: 0;
+	position: relative;
+	white-space: normal;
+	color: #666;
 	&__text {
-		display: inline-block;
 		color: #888;
-		transition: color .3s;
+		display: inline-block;
 		padding-right: 20px;
+		transition: color .3s;
 	}
 	&__required {
-		position: absolute;
-		display: inline-block;
-		top: 0;
 		color: #e55c5c;
+		display: inline-block;
+		position: absolute;
+		top: 0;
 	}
 }

@@ -1,0 +1,100 @@
+$orange-lighten: #fe9926;
+$orange: #e48922;
+$orange-darken: #cb7a1e;
+
+$color-3a: #ffaa00;
+$color-3b: #ff9500;
+$color-3c: #ff7f00;
+
+$green-lighten: #99cc33;
+$green: #89b72e;
+$green-darken: #7aa329;
+
+$black-lighten: #444;
+$black: #3d3d3d;
+$black-darken: #363636;
+
+.stickers {
+  font-size: 12px;
+  padding: 0 $site-padding;
+  position: absolute;
+  right: $site-padding * 13;
+  text-align: center;
+  top: -1px;
+  &__item {
+    background: $gray-light;
+    border: $gray 1px solid;
+    color: $white;
+    height: $site-padding * 7;
+    float: left;
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: $site-padding;
+    padding: $site-padding * 2 $site-padding;
+    position: relative;
+    text-shadow: 1px 1px 0 $gray-darken-1;
+    width: $site-padding * 5;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:before{
+      content: "";
+      border-top: $site-padding solid $gray-light;
+      border-right: (($site-padding * 5) / 2) solid transparent;
+      bottom: -$site-padding;
+      box-shadow: -1px 0 0 $gray;
+      height: 0;
+      left: 0;
+      position: absolute;
+    }
+    &:after{
+      content: "";
+      border-top: $site-padding solid $gray-light;
+      border-left: (($site-padding * 5) / 2) solid transparent;
+      bottom: -$site-padding;
+      box-shadow: 1px 0 0 $gray;
+      height: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+  &__item.privilege {
+    background: $green-lighten;
+    border-color: $green;
+    text-shadow: 1px 1px 0 $green-darken;
+    &:before{
+      border-top-color: $green-lighten;
+      box-shadow: -1px 0 0 $green;
+    }
+    &:after{
+      border-top-color: $green-lighten;
+      box-shadow: 1px 0 0 $green;
+    }
+  }
+  &__item.dead {
+    background: $black-lighten;
+    border-color: $black;
+    text-shadow: 1px 1px 0 $black-darken;
+    &:before{
+      border-top-color: $black-lighten;
+      box-shadow: -1px 0 0 $black;
+    }
+    &:after{
+      border-top-color: $black-lighten;
+      box-shadow: 1px 0 0 $black;
+    }
+  }
+  &__item.invalidity {
+    background: $orange-lighten;
+    border-color: $orange;
+    text-shadow: 1px 1px 0 $orange-darken;
+    &:before{
+      border-top-color: $orange-lighten;
+      box-shadow: -1px 0 0 $orange;
+    }
+    &:after{
+      border-top-color: $orange-lighten;
+      box-shadow: 1px 0 0 $orange;
+    }
+  }
+}

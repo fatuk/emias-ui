@@ -1,29 +1,144 @@
 .btn {
-	display: inline-block;
-	height: 32px;
-	border: solid 1px #ccc;
-	border-radius: 3px;
-	background: none;
-	font-size: 13px;
-	line-height: 30px;
-	color: #999;
-	padding: 0 24px;
-	text-decoration: none;
-	float: left;
-	margin-right: 16px;
-	transition: color .3s, border .3s;
+	background: $base-color-dark;
+	border-radius: 0;
+	border: $base-color-dark 1px solid;
+	color: $white;
 	cursor: pointer;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	height: 32px;
+	line-height: 14px;
+	margin-right: $site-padding;
+	padding: $site-padding $site-padding * 3;
+	position: relative;
+	text-decoration: none;
+	transition: background 0.3s ease 0s, border 0.3s ease 0s;
+
 	&:last-child {
 		margin-right: 0;
 	}
 	&:hover {
-		border-color: #888;
-		color: #555;
+		background: $base-color-dark;
+		border-color: $base-color-dark;
+		color: $white;
 	}
 	&[disabled] {
-		cursor: not-allowed;
 		background: #f7f7f7;
 		border-color: #ddd;
 		color: #aaa;
+		cursor: not-allowed;
+	}
+	.icon {
+		font-size: 130%;
+		height: $site-padding * 4;
+		&:before {
+			line-height: ($site-padding * 4) - 2;
+		}
+	}
+    &_icon-text {
+      padding: 0 ($site-padding / 2);
+      .icon {
+        float: left;
+        margin: 0 ($site-padding / 2);
+      }
+      .sign {
+        display: inline-block;
+        font-size: 10px;
+        line-height: 30px;
+        margin: 0 ($site-padding / 2);
+        text-transform: uppercase;
+      }
+    }
+	&__text {
+		line-height: $site-padding * 4;
+	}
+	&_icon {
+		padding: 0;
+		width: $site-padding * 4;
+	}
+	&_icon-left {
+		padding-left: $site-padding * 2;
+		.icon {
+			position: absolute;
+			top: 0;
+			left: $site-padding;
+		}
+	}
+	&_icon-right {
+		padding-left: $site-padding * 2;
+		.icon {
+			position: absolute;
+			top: 0;
+			right: $site-padding;
+		}
+	}
+	&_bigger {
+		font-size: 11px;
+		height: $site-padding * 5;
+		line-height: 8px;
+		padding: $site-padding * 2;
+		text-transform: uppercase;
+	}
+	&_logout {
+		background-color: $alert;
+		border-color: $alert-darken;
+		&:hover {
+			background: $alert-lighten;
+			border-color: $alert;
+		}
+	}
+	&_transparent {
+		background-color: transparent;
+		border-color: $base-color-dark;
+		color: $base-color-dark;
+		transition: border .3s, color .3s;
+		.icon {
+			color: $base-color-dark;
+		}
+		&:hover {
+			background: none;
+			color: #444444;
+			border-color: #666666;
+		}
+		&.active {
+			border-color: #666666;
+			background: #666666;
+			.icon {
+				color: $white;
+			}
+		}
+	}
+	&_grey {
+		background-color: transparent;
+		border-color: #ccc;
+		color: #999;
+		transition: border .3s, color .3s;
+		.icon {
+			color: #bbb;
+		}
+		&:hover {
+			background: none;
+			color: #444444;
+			border-color: #666666;
+		}
+		&.active {
+			border-color: #666666;
+			background: #666666;
+			.icon {
+				color: $white;
+			}
+		}
+	}
+	&_z-15 {
+		position: relative;
+		z-index: 15;
+	}
+}
+
+.navbar-right {
+	.btn {
+		margin-left: $site-padding;
+		margin-right: 0;
 	}
 }

@@ -1,0 +1,25 @@
+.purpose {
+    &__header {
+        background-color: $base-color-lighten-1;
+        border-bottom: $base-color-lighten-1-dark 1px solid;
+        color: $base-color-dark;
+        font-size: 14px;
+        line-height: 32px;
+        margin: 0 (-$site-padding);
+        overflow: hidden;
+        padding: $site-padding $site-padding * 2;
+        position: relative;
+    }
+    &__title {
+        float: left;
+        .icon {
+            margin-right: $site-padding * 2;
+        }
+    }
+    &__btns {
+        float: right;
+        .btn i{
+            font-size: 12px;
+        }
+    }
+}

@@ -1,44 +1,45 @@
 .radio {
-	position: relative;
 	display: inline-block;
+	position: relative;
 	@include clearfix();
 	input[type="radio"] {
-		position: absolute;
-		top: 0;
 		left: 0;
 		opacity: 0;
+		position: absolute;
+		top: 0;
 		&:checked + .radio__dot {
 			&:before {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin-top: -4px;
-				margin-left: -4px;
-				display: inline-block;
-				width: 8px;
-				height: 8px;
 				background: #666;
 				border-radius: 50%;
+				content: '';
+				display: inline-block;
+				height: 8px;
+				left: 50%;
+				margin-left: -4px;
+				margin-top: -4px;
+				position: absolute;
+				top: 50%;
+				width: 8px;
 			}
 		}
 	}
 	&__dot {
-		position: relative;
-		float: left;
-		width: 16px;
-		height: 16px;
-		border: solid 1px #ddd;
 		background-color: #f9f9f9;
+		border-radius: 50%;
+		border: solid 1px #ddd;
+		float: left;
+		height: 16px;
 		margin-right: 8px;
+		position: relative;
 		transition: border .3s;
-		border-radius: 50%
+		width: 16px;
 	}
 	&__label {
-		font-size: 13px;
-		line-height: 16px;
 		color: #888;
 		float: left;
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 16px;
 		transition: color .3s;
 	}
 	&:hover {

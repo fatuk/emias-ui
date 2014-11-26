@@ -1,116 +1,59 @@
 .dropdown-menu {
-	position: absolute;
+	background: $white;
+	border-radius: 0;
+	border: solid 1px #888;
+	box-shadow: none;
+	color: #666666;
 	display: none;
-	top: 32px;
-	right: -16px;
-	z-index: 5;
+	left: auto;
+	margin: 0;
+	padding: $site-padding;
+	position: absolute;
+	right: 0;
+	top: ($site-padding * 4) - ($site-padding / 2);
+	width: $site-padding * 32;
+	z-index: 10;
 	&__list {
 		list-style: none;
-		padding: 0;
 		margin: 0;
-		width: 512px;
+		padding: 0;
 	}
 	&__item {
-		position: relative;
-		background: #444;
-		padding: 0 9px;
-		border-top: solid 1px #3a3a3a;
-		transition: background .3s;
-		&:first-child {
-			border-top: none;
-		}
-		&:hover {
-			background: #3a3a3a;
-			border-color: #333;
-			& + .dropdown-menu__item {
-				border-color: #333;
-			}
-			.dropdown-menu__clear {
-				display: block;
-			}
-			.dropdown-menu__link {
-				color: #fff;
-			}
-		}
-	}
-	&__link {
-		display: inline-block;
-		width: 100%;
-		height: 32px;
-		line-height: 32px;
-		text-decoration: none;
-		font-size: 12px;
-		font-weight: 600;
-		color: #aaa;
+		border-bottom: solid 1px #ededed;
+		color: #888888;
+		cursor: pointer;
+		font-size: 13px;
+		line-height: $site-padding * 4;
 		transition: color .3s;
-	}
-	&__clear {
-		display: none;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	&__footer {
-		position: relative;
-		display: inline-block;
-		width: 100%;
-		height: 32px;
-		border-top: solid 1px #303030;
-	}
-	&__btn {
-		position: absolute;
-		top: 0;
-		font-size: 12px;
-		font-weight: 600;
-		color: #ccc;
-		text-decoration: none;
-		line-height: 31px;
-		background: linear-gradient(to bottom,  #484848 0%, #333333 100%);
-		transition: background .3s;
-		z-index: 5;
-		&:hover {
-			background: linear-gradient(to bottom,  #484848 0%, #333333 50%);
-		}
-		&:active {
-			color: #fff;
-			background: linear-gradient(to bottom,  #484848 0%, #333333 50%);
+		&:last-child {
+			border-bottom: none;
 		}
 		.icon {
-			position: absolute;
-			width: 10px;
-			height: 31px;
-			top: 0;
-		}
-		&_prev {
-			left: 9px;
-			padding-left: 20px;
-			padding-right: 16px;
-			border-right: solid 1px #303030;
-			.icon {
-				left: 0;
+			margin: 0 $site-padding;
+			font-size: 120%;
+			line-height: $site-padding;
+			&:before {
+				line-height: $site-padding;
 			}
 		}
-		&_next {
-			right: 9px;
-			padding-right: 20px;
-			padding-left: 16px;
-			border-left: solid 1px #303030;
-			.icon {
-				right: 0;
-			}
+		&:hover {
+			color: darken(#888888, 10%);
 		}
 	}
-	&__pages {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 32px;
-		line-height: 32px;
-		text-align: center;
-		font-size: 12px;
-		font-weight: 600;
-		color: #ccc;
-		background: linear-gradient(to bottom,  #484848 0%, #333333 100%);
+}
+
+.dropdown-wrapper {
+	&.open {
+		.btn {
+			background: $white;
+			border-bottom: none;
+			border-color: #888;
+			height: ($site-padding * 4) - 3;
+			position: relative;
+			z-index: 20;
+			.icon {
+				color: #888;
+			}
+		}
 	}
 }

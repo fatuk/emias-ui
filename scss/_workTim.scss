@@ -1,0 +1,18 @@
+.header {
+	background: $base-color-darken;
+	@include clearfix();
+	.logo {
+		float: left;
+		padding: $site-padding $site-padding * 4;
+		img {
+			display: block;
+			padding: 0 $site-padding;
+		}
+	}
+}
+
+/*==================*/
+
+.page-container{
+	height: 810px;
+}

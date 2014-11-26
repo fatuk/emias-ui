@@ -1,0 +1,47 @@
+.user-card {
+  background-color: $white;
+  border-bottom: $gray-darken 1px solid;
+  color: $text-color;
+  padding: $site-padding * 2;
+  @include clearfix();
+	&__avatar {
+      height: $site-padding * 12;
+      margin-right: $site-padding * 2;
+      width: $site-padding * 12;
+	}
+	&__container {
+      display: block;
+      overflow: hidden;
+	}
+	&__name {
+      font-weight: 600;
+      margin-bottom: $site-padding * 2;
+      margin-top: -$site-padding / 2;
+      * {
+        display: block;
+      }
+	}
+	&__list {
+      font-size: 10px;
+      line-height: 12px;
+      list-type: none;
+      margin: none;
+      padding: 0;
+      text-transform: uppercase;
+	}
+	&__item {
+      border-top: $gray 1px solid;
+      color: $gray-darken;
+      display: block;
+      padding: $site-padding 0;
+	}
+	&__link {
+      color: $gray-darken;
+	}
+    .icon{
+      display: inline-block;
+      font-size: $site-padding * 2;
+      padding: 0 $site-padding;
+      width: $site-padding * 4
+    }
+}

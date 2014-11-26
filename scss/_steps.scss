@@ -1,0 +1,36 @@
+.steps {
+  background: $white-lighten;
+  border: $base-color-darken 8px solid;
+  border-left: none;
+  height: 100%;
+  left: $site-column * 2 + $site-padding * 6;
+  overflow: hidden;
+  padding: $site-padding * 2;
+  position: absolute;
+  top: 0;
+  transition: width 0.3s, padding 0.3s ease-in-out 0s;
+  width: $site-column * 14 + $site-padding * 5;
+  z-index: 5;
+  &.closed {
+    border-right: none;
+    padding: $site-padding * 2 0;
+    width: 0;
+  }
+  &.active {
+    background: yellow;
+    position: relative;
+  }
+  &__container {
+  }
+  &__item {
+    display:none;
+    height: $site-column * 8 + $site-padding * 2;
+    margin-bottom: $site-padding * 2;
+    &.active{
+      display:block;
+    }
+  }
+  &__subset {
+    background: red;
+  }
+}

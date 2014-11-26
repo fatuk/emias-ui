@@ -1,0 +1,89 @@
+.modal-window {
+	border: solid ($site-padding / 2) $modal-header-color;
+	&__header {
+		@include clearfix();
+		background: $modal-header-color;
+		height: $site-padding * 4;
+		padding: 0 ($site-padding * 2) - ($site-padding / 2);
+        .icon {
+            height: ($site-padding * 4) - ($site-padding / 2);
+            &:before {
+                line-height: ($site-padding * 2) + ($site-padding / 2);
+            }
+        }
+	}
+	&__header-title {
+		color: $white;
+		float: left;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: ($site-padding * 4) - ($site-padding / 2);
+		margin: 0;
+	}
+	&__close {
+		color: $modal-footer-color;
+		cursor: pointer;
+		float: right;
+		text-align: right;
+		transition: opacity .3s;
+		&:hover {
+			color: $modal-footer-color;
+			opacity: .8;
+		}
+	}
+	&__content {
+		padding: $site-padding * 2;
+		position: relative;
+        &.info-label {
+            padding-left: $site-padding * 10;
+        }
+	}
+	&__container {
+		.form {
+			margin: 0;
+			margin-top: $site-padding * 2;
+			margin-left: $site-padding;
+		}
+		.form__row {
+			padding: 0;
+			margin: 0;
+		}
+		.radio {
+			margin: 0;
+		}
+	}
+	&__title {
+		color: $text-color;
+		font-size: 13px;
+		font-weight: 600;
+		margin: 0;
+		margin-bottom: $site-padding * 2;
+	}
+	&__mark {
+		display: inline-block;
+		height: $site-padding * 4;
+		left: $site-padding * 3;
+		position: absolute;
+		top: $site-padding * 2;
+		width: $site-padding * 4;
+	}
+	&__text {
+		color: $text-color;
+		font-size: 13px;
+		line-height: $site-padding * 2;
+	}
+	&__footer {
+		@include clearfix();
+		background: $modal-footer-color;
+		padding: ($site-padding * 2) ($site-padding * 2) + ($site-padding / 2);
+		text-align: right;
+		.btn {
+			float: none;
+		}
+	}
+}
+
+.modal-content {
+	border-radius: 0;
+	box-shadow: none;
+}

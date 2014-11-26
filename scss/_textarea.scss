@@ -1,19 +1,19 @@
 .textarea {
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 50%);
 	border: solid 1px #ddd;
+	color: #444;
 	font-size: 13px;
 	font-weight: normal;
-	color: #444;
-	min-height: 65px;
 	line-height: 16px;
+	min-height: 65px;
 	padding: 5px 8px;
-	width: 100%;
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 50%);
-	transition: color .3s, border .3s;
 	resize: none;
+	transition: color .3s, border .3s;
+	width: 100%;
 	&[disabled] {
 		background: #eee;
-		color: #444 !important;
 		border: solid 1px #ddd !important;
+		color: #444 !important;
 		cursor: not-allowed;
 	}
 }

@@ -1,13 +1,13 @@
 .date {
-	width: 175px;
 	position: relative;
+	width: 175px;
 	.icon {
+		color: #BBBBBB;
+		font-size: 12px;
+		line-height: 32px;
 		position: absolute;
 		right: 0;
 		top: 0;
-		line-height: 32px;
-		font-size: 12px;
-		color: #BBBBBB;
 	}
 	.input {
 		padding-right: 30px;

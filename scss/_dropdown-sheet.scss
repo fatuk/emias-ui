@@ -1,0 +1,116 @@
+.dropdown-sheet {
+	display: none;
+	position: absolute;
+	right: -16px;
+	top: 32px;
+	width: 512px;
+	z-index: 5;
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__item {
+		background: #444;
+		border-top: solid 1px #3a3a3a;
+		padding: 0 9px;
+		position: relative;
+		transition: background .3s;
+		&:first-child {
+			border-top: none;
+		}
+		&:hover {
+			background: #3a3a3a;
+			border-color: #333;
+			& + .dropdown-sheet__item {
+				border-color: #333;
+			}
+			.dropdown-sheet__close {
+				display: block;
+			}
+			.dropdown-sheet__link {
+				color: $white;
+			}
+		}
+	}
+	&__link {
+		color: #aaa;
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		height: 32px;
+		line-height: 32px;
+		text-decoration: none;
+		transition: color .3s;
+		width: 100%;
+	}
+	&__close {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	&__footer {
+		border-top: solid 1px #303030;
+		display: inline-block;
+		height: 32px;
+		position: relative;
+		width: 100%;
+	}
+	&__btn {
+		background: linear-gradient(to bottom,  #484848 0%, #333333 100%);
+		color: #ccc;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 31px;
+		position: absolute;
+		text-decoration: none;
+		top: 0;
+		transition: background .3s;
+		z-index: 5;
+		&:hover {
+			background: linear-gradient(to bottom,  #484848 0%, #333333 50%);
+		}
+		&:active {
+			background: linear-gradient(to bottom,  #484848 0%, #333333 50%);
+			color: $white;
+		}
+		.icon {
+			height: 31px;
+			position: absolute;
+			top: 0;
+			width: 10px;
+		}
+		&_prev {
+			border-right: solid 1px #303030;
+			left: 9px;
+			padding-left: 20px;
+			padding-right: 16px;
+			.icon {
+				left: 0;
+			}
+		}
+		&_next {
+			border-left: solid 1px #303030;
+			padding-left: 16px;
+			padding-right: 20px;
+			right: 9px;
+			.icon {
+				right: 0;
+			}
+		}
+	}
+	&__pages {
+		background: linear-gradient(to bottom,  #484848 0%, #333333 100%);
+		color: #ccc;
+		font-size: 12px;
+		font-weight: 600;
+		height: 32px;
+		left: 0;
+		line-height: 32px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+	}
+}

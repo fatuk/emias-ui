@@ -1,0 +1,53 @@
+.step-nav {
+  margin: 0 (-$site-padding);
+  overflow: hidden;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  &__item {
+    display: table;
+    font-size: 13px;
+    line-height: 14px;
+    width: 100%;
+    a {
+      background: $base-color-darken-1;
+      border-bottom: $base-color-darken 1px solid;
+      color: $green-sea-darken;
+      cursor: pointer;
+      display: table-cell;
+      height: $site-padding * 6;
+      padding: 0 $site-padding * 2;
+      position: relative;
+      vertical-align: middle;
+      &:hover {
+        text-decoration: none;
+      }
+      &:before {
+        content: "";
+        background-color: $base-color-light;
+        display: none;
+        height: $site-padding * 6;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: $site-padding;
+      }
+    }
+    &.open a {
+      background-color: $white;
+      border-bottom-color: $white;
+      color: $base-color-darken;
+    }
+    &.passed a {
+      background-color: #274d4d; //изменить
+      border-bottom-color: $green-sea-darken;
+      color: $green-sea;
+      &:before {
+        display: block;
+      }
+    }
+  }
+}

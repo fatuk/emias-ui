@@ -1,6 +1,121 @@
-/************
- Mixin
-************/
+// Clearfix
+@mixin clearfix {
+	&:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+}
+
+@mixin no-wrap {
+	white-space: nowrap;
+}
+
+@mixin no-select {
+	user-select: none;
+}
+
+@mixin dots {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	@include no-wrap();
+}
+
+// PX to EM
+@function em($px, $base: $base-font-size) {
+	@return ($px / $base) * 1em;
+}
+
+@function rem($sizeValue: 1.6) {
+	@return $sizeValue + rem;
+}
+
+// Triangle
+@mixin triangle ($size, $color, $direction) {
+  height: 0;
+  width: 0;
+
+  $width: nth($size, 1);
+  $height: nth($size, length($size));
+
+  $foreground-color: nth($color, 1);
+  $background-color: if(length($color) == 2, nth($color, 2), transparent);
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+
+    $width: $width / 2;
+    $height: if(length($size) > 1, $height, $height/2);
+
+    @if $direction == up {
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+      border-bottom: $height solid $foreground-color;
+
+    } @else if $direction == right {
+      border-top: $width solid $background-color;
+      border-bottom: $width solid $background-color;
+      border-left: $height solid $foreground-color;
+
+    } @else if $direction == down {
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+      border-top: $height solid $foreground-color;
+
+    } @else if $direction == left {
+      border-top: $width solid $background-color;
+      border-bottom: $width solid $background-color;
+      border-right: $height solid $foreground-color;
+    }
+  }
+
+  @else if ($direction == up-right) or ($direction == up-left) {
+    border-top: $height solid $foreground-color;
+
+    @if $direction == up-right {
+      border-left:  $width solid $background-color;
+
+    } @else if $direction == up-left {
+      border-right: $width solid $background-color;
+    }
+  }
+
+  @else if ($direction == down-right) or ($direction == down-left) {
+    border-bottom: $height solid $foreground-color;
+
+    @if $direction == down-right {
+      border-left:  $width solid $background-color;
+
+    } @else if $direction == down-left {
+      border-right: $width solid $background-color;
+    }
+  }
+
+  @else if ($direction == inset-up) {
+    border-width: $height $width;
+    border-style: solid;
+    border-color: $background-color $background-color $foreground-color;
+  }
+
+  @else if ($direction == inset-down) {
+    border-width: $height $width;
+    border-style: solid;
+    border-color: $foreground-color $background-color $background-color;
+  }
+
+  @else if ($direction == inset-right) {
+    border-width: $width $height;
+    border-style: solid;
+    border-color: $background-color $background-color $background-color $foreground-color;
+  }
+
+  @else if ($direction == inset-left) {
+    border-width: $width $height;
+    border-style: solid;
+    border-color: $background-color $foreground-color $background-color $background-color;
+  }
+}
+
+
 @mixin arrow_helper($arrowSize, $arrowColor, $margin, $side, $align) {
   @if $side == "top" {
     border-bottom-color: $arrowColor;
@@ -53,10 +168,10 @@
     border: solid transparent;
     content: " ";
     height: 0;
-    width: 0;
-    position: absolute;
     pointer-events: none;
+    position: absolute;
     visibility: visible;
+    width: 0;
   }
 
   &:after {
@@ -105,20 +220,3 @@
 //   &.arrow-right-center {@include arrow('right','center', 10px, #eee, #4fade3, 6px)}
 //   &.arrow-right-bottom {@include arrow('right','bottom', 10px, #eee, #4fade3, 6px)}
 // }
-
-
-@mixin no-break() {
-    white-space: nowrap;
-}
-
-@mixin clearfix() {
-  &:after {
-    content:"";
-    display:table;
-    clear:both;
-  }
-}
-
-@mixin no-select() {
-  user-select: none;
-}

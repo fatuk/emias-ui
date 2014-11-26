@@ -1,33 +1,53 @@
 .checkbox {
-	position: relative;
 	display: inline-block;
+	margin: 0;
+	min-height: inherit;
+	position: relative;
 	@include clearfix();
 	input[type="checkbox"] {
-		position: absolute;
-		top: 0;
 		left: 0;
 		opacity: 0;
+		position: absolute;
+		top: 0;
+		margin: 0;
 		&:checked + .checkbox__check {
-			background-image: url('../img/checked.png');
-			background-repeat: no-repeat;
-			background-position: center;
+			.icon {
+				display: inline-block;
+			}
 		}
 	}
 	&__check {
-		float: left;
-		width: 16px;
-		height: 16px;
-		border: solid 1px #ddd;
 		background-color: #f9f9f9;
-		margin-right: 8px;
+		border: solid 1px #ddd;
+		float: left;
+		height: 16px;
+		margin: 0;
+		margin-right: $site-padding;
+		text-align: center;
 		transition: border .3s;
+		width: 16px;
+		.icon {
+			color: #777;
+			display: none;
+			font-size: 60%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			&:before {
+				width: $site-padding * 2;
+				height: $site-padding * 2;
+				line-height: $site-padding * 2;
+			}
+		}
 	}
 	&__label {
-		font-size: 13px;
-		line-height: 16px;
 		color: #888;
 		float: left;
+		font-size: 13px;
+		font-weight: normal;
+		line-height: ($site-padding * 2) - 2px;
 		transition: color .3s;
+		@include no-select();
 	}
 	&:hover {
 		.checkbox__check {

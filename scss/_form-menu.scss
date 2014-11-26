@@ -1,12 +1,12 @@
 .form-menu {
-	position: absolute;
-	top: 0;
-	right: 16px;
 	height: 32px;
+	position: absolute;
+	right: 16px;
+	top: 0;
 	&__list {
 		list-style: none;
-		padding: 0;
 		margin: 0;
+		padding: 0;
 		@include clearfix();
 	}
 	&__item {
@@ -14,35 +14,32 @@
 		&.expanded {
 			background: #444444;
 			.form-menu__link {
-				color: #fff;
+				color: $white;
 			}
 			.icon-drop-down {
 				background: url('../img/drop-down-white.png') no-repeat center;
 			}
-			.dropdown-menu {
+			.dropdown-sheet {
 				display: block;
 			}
 		}
 	}
 	&__link {
+		color: #888;
 		display: inline-block;
-		text-decoration: none;
-		text-transform: uppercase;
 		font-size: 10px;
 		font-weight: 600;
 		line-height: 32px;
-		color: #888;
 		padding: 0 16px;
+		text-decoration: none;
+		text-transform: uppercase;
 		.icon {
 			position: absolute;
-			top: 0;
 			right: 0;
+			top: 0;
 		}
 		&_dropdown {
 			padding-right: 30px;
 		}
-	}
-	&__dropdown {
-
 	}
 }

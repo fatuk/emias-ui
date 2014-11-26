@@ -1,0 +1,27 @@
+.controls-user {
+  float: right;
+  padding: $site-padding;
+  &__container {
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    background-color: $gray-light;
+    border: $gray 1px solid;
+    color: $gray-darken-1;
+    float: left;
+    font-size: 16px;
+    height: $site-padding * 4;
+    line-height: 16px;
+    margin-left: $site-padding;
+    padding: $site-padding;
+    text-align: center;
+    width: $site-padding * 4;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

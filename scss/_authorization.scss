@@ -1,0 +1,53 @@
+.authorization {
+    background: $gray-light;
+    height: 900px;
+    &__logo {
+        padding: ($site-padding * 7 + $site-padding / 2) 0;
+        text-align: center;
+    }
+    &__containeer {
+        margin: 0 auto;
+        width: $site-column * 5 + $site-padding * 3;
+    }
+    &__list {
+        background-color: $white;
+        padding: $site-padding * 2;
+        .step {
+            margin: 0;
+        }
+    }
+    &__item {
+        overflow: hidden;
+        padding: 0 $site-padding * 2;
+        i.icon {
+            font-size: 80%;
+        }
+    }
+    &__label {
+      color: $base-color-dark;
+      display: block;
+      font-size: 10px;
+      line-height: 16px;
+      padding: $site-padding;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &__value {}
+
+    .user-card {
+        background-color: $base-color-dark;
+        color: $white;
+        font-size: 15px;
+        padding: $site-padding * 3;
+        &__container {
+            padding-top: $site-padding * 2;
+        }
+    }
+    .btn {
+        background-color: $base-color-dark;
+        border-color: $base-color-dark;
+        margin: $site-padding * 2;
+        margin-top: $site-padding * 6;
+        width: $site-column * 2 + $site-padding;
+    }
+}

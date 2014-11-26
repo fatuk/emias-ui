@@ -1,0 +1,47 @@
+.record-info {
+    clear: both;
+    padding: $site-padding;
+    &__title {
+      font-weight: 600;
+      padding: $site-padding;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: $site-padding 0;
+    }
+    &__item {
+        margin: 0 $site-padding / 2;
+        overflow: hidden;
+        position: relative;
+        &:before {
+            content: "";
+            background-color: $white;
+            border-top: $gray 1px dotted;
+            height: 1px;
+            left: 0;
+            position: absolute;
+            top: $site-padding + ($site-padding / 2);
+            width: 100%;
+        }
+    }
+    &__label {
+      background-color: $white;
+      display: inline;
+      float: left;
+      max-width: 50%;
+      padding: 0 ($site-padding / 2);
+      position: relative;
+      z-index: 10;
+    }
+    &__value {
+      background-color: $white;
+      display: inline;
+      float: right;
+      max-width: 50%;
+      padding: 0 ($site-padding / 2);
+      position: relative;
+      text-align: right;
+      z-index: 10;
+    }
+}

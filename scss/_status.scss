@@ -1,0 +1,12 @@
+.status {
+  &__item {
+    display: block;
+  }
+  &__label {
+    color: $green-sea-lighten;
+    display: block;
+  }
+  &__value {
+    color: $white;
+  }
+}

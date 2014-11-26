@@ -1,0 +1,20 @@
+.hint {
+	background: $alert;
+	border-radius: 5px;
+	cursor: default;
+	// display: none;
+	left: 50%;
+	position: absolute;
+	top: -38px;
+	transform: translateX(-50%);
+	@include no-wrap();
+	@include no-select();
+	&__text {
+		color: $white;
+		display: inline-block;
+		font-size: 13px;
+		line-height: 28px;
+		padding: 0 10px;
+	}
+	@include arrow('bottom','center', 10px, $alert, $alert, 0);
+}

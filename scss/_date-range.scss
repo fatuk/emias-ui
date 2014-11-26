@@ -1,19 +1,19 @@
 .date-range {
 	@include clearfix();
 	&__divider {
+		background: #eee;
+		border-bottom: solid 1px #ddd;
+		border-top: solid 1px #ddd;
+		color: #888;
 		float: left;
-		width: 30px;
-		height: 32px;
-		line-height: 32px;
 		font-size: 13px;
 		font-weight: 600;
-		color: #888;
-		background: #eee;
-		border-top: solid 1px #ddd;
-		border-bottom: solid 1px #ddd;
+		height: 32px;
+		line-height: 32px;
+		width: 30px;
 	}
 	.input {
-		width: 150px;
 		float: left;
+		width: 150px;
 	}
 }

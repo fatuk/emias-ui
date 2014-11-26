@@ -1,80 +1,79 @@
 .switch {
 	display: inline-block;
-	position: relative;
-	width: 96px;
 	height: 32px;
 	overflow: hidden;
+	position: relative;
+	width: 96px;
 	.input {
+		cursor: pointer;
+		height: 100%;
+		left: 0;
+		opacity: 0;
 		position: absolute;
 		top: 0;
-		left: 0;
 		width: 100%;
-		height: 100%;
-		z-index: 0;
-		opacity: 0;
-		cursor: pointer;
+		z-index: 5;
 		&:checked + .switch__container {
 			left: -48px;
 			.switch__space {
 				border-radius: 2px 0 0 2px !important;
 			}
 		}
-		&[disabled] + .switch__container {
+		&[disabled] {
 			cursor: not-allowed;
 		}
 	}
 	&__container {
 		display: inline-block;
+		height: 32px;
+		left: 0;
 		position: absolute;
 		top: 0;
-		left: 0;
-		width: (48px * 3);
-		height: 32px;
 		transition: all .3s;
-		cursor: pointer;
+		width: (48px * 3);
 	}
 	&__space {
+		border-radius: 0 2px 2px 0;
+		border: solid 1px #ddd;
+		height: 32px;
+		left: 48px;
 		position: absolute;
 		top: 0;
-		left: 48px;
 		width: 48px;
-		height: 32px;
-		border: solid 1px #ddd;
-		border-radius: 0 2px 2px 0;
 	}
 	&__yes {
-		display: inline-block;
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 48px;
-		height: 32px;
-		font-size: 10px;
-		font-weight: 600;
-		line-height: 32px;
-		color: #fff;
-		text-transform: uppercase;
-		text-align: center;
-		border: solid 1px $blue;
 		background: $light-blue;
 		border-radius: 0 2px 2px 0;
-	}
-	&__no {
+		border: solid 1px $blue;
+		color: $white;
 		display: inline-block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 48px;
-		height: 32px;
-		background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
 		font-size: 10px;
 		font-weight: 600;
+		height: 32px;
 		line-height: 32px;
-		color: #888;
-		text-transform: uppercase;
+		position: absolute;
+		right: 0;
 		text-align: center;
-		border: solid 1px #ddd;
-		border-right: none;
+		text-transform: uppercase;
+		top: 0;
+		width: 48px;
+	}
+	&__no {
+		background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
 		border-radius: 2px 0 0 2px;
+		border-right: none;
+		border: solid 1px #ddd;
+		color: #888;
+		display: inline-block;
+		font-size: 10px;
+		font-weight: 600;
+		height: 32px;
+		left: 0;
+		line-height: 32px;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		top: 0;
+		width: 48px;
 	}
 }

@@ -1,0 +1,32 @@
+.advanced-search {
+	@include clearfix();
+	&__option {
+		background: #f9f9f9;
+		border: solid 1px #ccc;
+		border-right: none;
+		float: left;
+		height: $site-padding * 4;
+		padding: ($site-padding - 2px) $site-padding;
+	}
+	.checkbox {
+		margin: 0;
+	}
+	.checkbox__label {
+		font-weight: normal;
+	}
+	.input {
+		float: left;
+		width: $site-column * 4 + $site-padding * 4;
+	}
+	&__input {
+		float: left;
+		@include clearfix();
+		.btn {
+			border-color: #cccccc;
+			border-left: none;
+			color: #ababab;
+			float: left;
+			margin: 0;
+		}
+	}
+}

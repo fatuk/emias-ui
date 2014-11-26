@@ -1,0 +1,63 @@
+@import 'vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+// @import 'old_app.css';
+
+@import 'variables';
+@import 'mixins';
+@import 'type';
+@import 'icons';
+@import 'helpers';
+@import 'reset';
+@import 'animations';
+
+@import 'user';
+@import 'user-card';
+@import 'user-info';
+@import 'ava';
+@import 'stickers';
+@import 'patient-description';
+@import 'controls-user';
+@import 'sidebar';
+@import 'step-nav';
+@import 'steps';
+@import 'step-container';
+@import 'status';
+@import 'modal-message';
+@import 'tooltip';
+@import 'authorization';
+@import 'purpose';
+@import 'record-info';
+@import 'form-types';
+
+@import 'main-menu';
+@import 'btn';
+@import 'checkbox';
+@import 'date';
+@import 'date-range';
+@import 'dropdown-menu';
+@import 'hint';
+@import 'field';
+@import 'form';
+@import 'form-menu';
+@import 'input';
+@import 'label';
+@import 'number';
+@import 'radio';
+@import 'search';
+@import 'switch';
+@import 'textarea';
+@import 'working-docs';
+@import 'drop-panel';
+@import 'panel';
+@import 'calendar';
+@import 'advanced-search';
+@import 'date-arrows';
+@import 'footer';
+@import 'select2';
+@import 'accordion';
+@import 'modal-window';
+@import 'dropdown-sheet';
+
+@import 'sheet';
+
+@import 'workTim';

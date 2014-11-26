@@ -1,0 +1,8 @@
+.tooltip {
+    .tooltip-inner {
+        border-radius: 0;
+        font-size: 12px;
+        line-height: $site-padding * 2;
+        padding: $site-padding;
+    }
+}

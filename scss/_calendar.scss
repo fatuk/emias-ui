@@ -1,0 +1,253 @@
+.w-calendar {
+	position: relative;
+	height: $site-padding * 4;
+}
+.date-type2 {
+	width:239px;
+	height:64px;
+	border:1px solid #ddd;
+	border-radius: 4px !important;
+	overflow:hidden;
+	cursor: pointer;
+	input {
+		margin-top: -100px;
+	}
+
+	.btn > strong {
+		color: #ebebeb;
+	}
+
+	.date-type2-date {
+		float:left;
+		width:175px;
+		height:54px;
+		padding-top:10px;
+		text-align:center;
+		line-height:20px;
+		font-size:12px;
+		color: #666;
+		font: 600 12px/20px 'Open Sans';
+	}
+
+	.date-type2-bt-back,
+	.date-type2-bt-forward {
+		float:left;
+		width:31px;
+		height:64px;
+		appearance:button;
+		background: #fefefe;
+		&:before      {
+			content:"";
+			width:32px;
+			height:32px;
+			display:block;
+			position:relative;
+			top: 50%;
+			margin-top: -16px;
+		}
+	}
+
+	.date-type2-bt-back {
+		border-right:1px solid #ddd;
+		&:before {
+			background:url(../images/ui_date_arrows.png) 6px 7px no-repeat;
+		}
+	}
+
+	.date-type2-bt-forward  {
+		border-left:1px solid #ddd;
+		&:before {
+			background:url(../images/ui_date_arrows.png) -26px 7px no-repeat;
+		}
+	}
+
+	&.disabled {
+		cursor: default;
+
+		.date-type2-bt-back {
+			background: #fafafa;
+			&:before {
+				background:url(../images/ui_date_arrows.png) 6px -25px no-repeat;
+			}
+		}
+
+		.date-type2-bt-forward  {
+			background: #fafafa;
+			&:before {
+				background:url(../images/ui_date_arrows.png) -26px -25px no-repeat;
+			}
+		}
+	}
+}
+
+// dropdown calendar style
+.w-calendar ul.dropdown-menu {
+	position: absolute;
+	left: 0 !important;
+	top: 33px !important;
+	padding: 11px;
+	box-sizing: border-box;
+	border-collapse: collapse;
+	background: #f8f8f8;
+	li {
+		position: relative;
+		padding: 0 !important;
+	}
+	table {
+		outline: none;
+		width: 100%;
+	}
+	th, td {
+		padding: 0 !important;
+	}
+	thead {
+		.btn {
+			background: #575757;
+			border-width: 0;
+			border-radius: 0 !important;
+			color: white;
+			font-size: 12px;
+			text-transform: capitalize;
+			position: relative;
+			padding: 0 !important;
+			i {
+				display: none;
+			}
+		}
+		.pull-left {
+			border-radius: 3px 0 0px 3px !important;
+			width: 28px;
+			padding: 0;
+			&:after {
+				content: '';
+				border-right: 5px solid white;
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -3px;
+				margin-top: -5px;
+			}
+		}
+		.pull-right {
+			border-radius: 0 3px 3px 0 !important;
+			width: 28px;
+			padding: 0;
+			&:after {
+				content: '';
+				border-left: 5px solid white;
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -3px;
+				margin-top: -5px;
+			}
+		}
+		small {
+			text-transform: uppercase;
+		}
+	}
+	tbody {0
+		td {
+		}
+
+		td:nth-of-type(7),
+		td:nth-of-type(8) {
+			span {
+				color: #e05a5a !important;
+			}
+		}
+
+		button.btn {
+			background: white;
+			padding: 0 !important;
+			text-align: center;
+			border-radius: 0 !important;
+			//border: none !important;
+			border: 1px solid #efefef !important;
+			margin: 0;
+			width: 28px !important;
+			height: 28px !important;
+			&.active {
+				span {
+					background: #3399cc;
+					border-color: #267399;
+					color: white !important;
+				}
+			}
+			span {
+				width: 100% !important;
+				height: 28px !important;
+				line-height: 26px;
+				display: block;
+				color: #888;
+				&.text-info {
+					background: #666;
+					color: white;
+					box-shadow: inset -1px -1px 6px -1px #666;
+				}
+				&.text-muted {
+					background: #f9f9f9;
+					color: #cfcfcf !important;
+				}
+			}
+		}
+	}
+
+	[ng-switch-when=month] {
+		button.btn {
+			width: 100% !important;
+			span {
+				width: 100% !important;
+			}
+		}
+		thead {
+			.pull-left {
+				&:after {
+					left: 30%;
+				}
+			}
+			.pull-right {
+				&:after {
+					left: 70%;
+				}
+			}
+		}
+	}
+
+	[ng-switch-when=year] {
+		th>.pull-left,
+		th>.pull-right {
+			width: 100% !important;
+		}
+		td>button.btn {
+			width: 100% !important;
+			span {
+				width: 100% !important;
+			}
+		}
+	}
+
+	.btn-group {
+		width: 100%;
+		padding-top: 10px;
+		margin-left: 0px;
+		button {
+			text-transform: capitalize;
+			font-size: 12px;
+		}
+	}
+	.btn-info {
+		width: 100%;
+
+		&:hover {
+			color: #333;
+		}
+	}
+	.btn-danger, .btn-success {
+		display: none !important;
+	}
+}

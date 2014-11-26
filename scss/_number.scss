@@ -16,12 +16,12 @@ input::-webkit-inner-spin-button {
 		margin-right: 16px;
 	}
 	&__btn {
-		cursor: pointer;
 		background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
-		width: 32px;
-		height: 32px;
 		border: solid 1px #ddd;
+		cursor: pointer;
+		height: 32px;
 		transition: background .3s;
+		width: 32px;
 		.icon-plus,
 		.icon-minus {
 			transition: opacity .3s;
@@ -38,22 +38,22 @@ input::-webkit-inner-spin-button {
 			background: linear-gradient(to bottom,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
 		}
 		&_minus {
-			float: left;
 			border-right: none;
+			float: left;
 		}
 		&_plus {
-			float: right;
 			border-left: none;
+			float: right;
 		}
 	}
 	&__unit {
+		color: #888;
 		float: left;
 		font-size: 13px;
 		line-height: 32px;
-		color: #888;
 	}
 	.input {
-		width: 66px;
 		text-align: center;
+		width: 66px;
 	}
 }

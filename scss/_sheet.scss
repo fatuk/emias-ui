@@ -1,0 +1,166 @@
+.sheet {
+	float: left;
+	width: 100%;
+	&__title {
+		background: $sheet-main-color;
+		color: $white;
+		display: inline-block;
+		float: left;
+		font-size: 10px;
+		font-weight: 600;
+		height: $site-padding * 3;
+		line-height: $site-padding * 3;
+		margin: 0;
+		padding: 0 ($site-padding + ($site-padding / 2));
+		text-transform: uppercase;
+		width: 100%;
+		&_registry {
+			background: #888888;
+		}
+	}
+	&__empty {
+		text-align: center;
+		background: #fafafa;
+		padding: ($site-padding * 4) 0;
+	}
+	&__empty-title {
+		font-size: 13px;
+		font-weight: 600;
+		color: #444444;
+	}
+	&__empty-subtitle {
+		font-size: 13px;
+		color: #888888;
+	}
+	&__empty-link {
+		color: #2e9999;
+	}
+	&__list {
+		display: table;
+		float: left;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	&__item {
+		@include clearfix();
+		background: #fffff2;
+		display: table-row;
+		height: $site-padding * 8;
+		width: 100%;
+	}
+	&__cell {
+		border-bottom: solid 1px #D9D9C3;
+		display: table-cell;
+		padding: ($site-padding * 2) $site-padding;
+		vertical-align: middle;
+		&:first-child {
+			padding-left: $site-padding;
+		}
+		&:last-child {
+			padding-right: $site-padding;
+		}
+		&_top {
+			vertical-align: top;
+		}
+	}
+	&__time {
+		color: #666666;
+		font-size: 12px;
+		font-weight: 600;
+		padding: 0 $site-padding;
+		text-align: center;
+		width: (56px / 784px) * 100%;
+		width: 100%;
+	}
+	&__container {
+		padding: 0 $site-padding;
+	}
+	&__name {
+		color: #444444;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 13px;
+		font-weight: 600;
+		vertical-align: top;
+	}
+	&__info {
+		color: #777777;
+		font-size: 13px;
+	}
+	&__age {
+		color: #777777;
+		font-size: 12px;
+		padding: 0 $site-padding;
+	}
+	&__controls {
+		float: right;
+		padding: 0 $site-padding;
+		position: relative;
+		@include clearfix();
+	}
+	&__tooltip {
+		background: $white;
+		border: solid 1px #888;
+		color: #666666;
+		display: none;
+		padding: $site-padding * 2;
+		position: absolute;
+		right: $site-padding;
+		top: $site-padding * 6;
+		width: $site-padding * 40;
+		z-index: 10;
+		&:after {
+			content: '';
+			position: absolute;
+			right: $site-padding * 2;
+			top: -10px;
+			z-index: 10;
+			@include triangle(20px 10px, $white transparent, up);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			right: $site-padding * 2;
+			top: -11px;
+			z-index: 10;
+			@include triangle(20px 10px, #000 transparent, up);
+		}
+		&.open {
+			display: block;
+		}
+	}
+	&__tooltip-overlay {
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 5;
+	}
+	&__tooltip-title {
+		font-size: 11px;
+		font-weight: 600;
+	}
+	&__tooltip-text {
+		font-size: 11px;
+	}
+	&__tooltip-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__tooltip-item {
+		display: inline-block;
+		width: 100%;
+	}
+	&__tooltip-key {
+		font-size: 11px;
+		font-weight: 600;
+		width: $site-padding * 12;
+	}
+	&__tooltip-value {
+		font-size: 11px;
+	}
+}

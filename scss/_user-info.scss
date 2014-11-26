@@ -1,0 +1,34 @@
+.user-info {
+  background-color: $white-darken;
+  border-bottom: $gray-darken 1px solid;
+  &:last-child {
+    border: none;
+  }
+	&__list {
+      color: $black;
+      font-size: 12px;
+      line-height: 16px;
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: $site-padding * 2;
+	}
+	&__item {
+      margin-top: $site-padding;
+      overflow: hidden;
+      &:first-child {
+        margin-top: 0;
+      }
+	}
+	&__label {
+      color: $gray-darken;
+      margin-bottom: 0;
+      display: block;
+	}
+	&__value {
+      margin-bottom: 0;
+	}
+    .btn{
+      margin-bottom: $site-padding;
+    }
+}
