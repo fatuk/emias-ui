@@ -36,20 +36,20 @@
 			line-height: ($site-padding * 4) - 2;
 		}
 	}
-    &_icon-text {
-      padding: 0 ($site-padding / 2);
-      .icon {
-        float: left;
-        margin: 0 ($site-padding / 2);
-      }
-      .sign {
-        display: inline-block;
-        font-size: 10px;
-        line-height: 30px;
-        margin: 0 ($site-padding / 2);
-        text-transform: uppercase;
-      }
-    }
+	&_icon-text {
+		padding: 0 ($site-padding / 2);
+		.icon {
+			float: left;
+			margin: 0 ($site-padding / 2);
+		}
+		.sign {
+			display: inline-block;
+			font-size: 10px;
+			line-height: 30px;
+			margin: 0 ($site-padding / 2);
+			text-transform: uppercase;
+		}
+	}
 	&__text {
 		line-height: $site-padding * 4;
 	}

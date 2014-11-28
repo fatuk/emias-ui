@@ -17,6 +17,7 @@
     "jquery": "1.11.1",
     "normalize-less": "*",
     "3l": "~1.4.4",
-    "normalize-scss": "~3.0.1"
+    "normalize-scss": "~3.0.1",
+    "bootstrap-sass-official": "~3.3.1"
   }
 }

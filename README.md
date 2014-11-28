@@ -16,3 +16,8 @@ Setup project:
 4. http://localhost:8000
 
 Main file /index.html
+
+## TODO
+
+1. Элементы формы с атрибутом *disabled* не поддерживают смену курсора.
+2.

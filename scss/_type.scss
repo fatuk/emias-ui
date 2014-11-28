@@ -8,6 +8,7 @@ html, body {
 
 $fontsUrl: '../fonts/Open Sans/';
 
+
 @font-face {
 	font-family: 'OpenSansRegular';
 	src: url($fontsUrl + 'opensans-regular.eot');
@@ -19,11 +20,11 @@ $fontsUrl: '../fonts/Open Sans/';
 }
 
 @font-face {
-    font-family: 'OpenSansSemiboldRegular';
+    font-family: 'OpenSansRegular';
     src: url($fontsUrl + 'opensans-semibold.eot');
     src: url($fontsUrl + 'opensans-semibold.eot?#iefix') format('embedded-opentype'),
          url($fontsUrl + 'opensans-semibold.woff') format('woff'),
          url($fontsUrl + 'opensans-semibold.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 }

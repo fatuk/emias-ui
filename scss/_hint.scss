@@ -1,8 +1,6 @@
 .hint {
-	background: $alert;
-	border-radius: 5px;
+	background: $gray;
 	cursor: default;
-	// display: none;
 	left: 50%;
 	position: absolute;
 	top: -38px;
@@ -16,5 +14,18 @@
 		line-height: 28px;
 		padding: 0 10px;
 	}
-	@include arrow('bottom','center', 10px, $alert, $alert, 0);
+	&:before {
+		@include triangle($site-padding * 2, $gray, 'down');
+		bottom: -$site-padding;
+		content: '';
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+	&_error {
+		background: $alert;
+		&:before {
+			@include triangle($site-padding * 2, $alert, 'down');
+		}
+	}
 }

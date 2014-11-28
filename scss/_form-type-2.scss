@@ -1,0 +1,107 @@
+.form-type-2 {
+	clear: both;
+	color: $gray-darken-1;
+	font-size: 13px;
+	&__header {
+		background: $green-sea-darken;
+		height: $site-padding * 4;
+		position: relative;
+	}
+	&__title {
+		color: #f2ffff;
+		font-size: 13px;
+		font-weight: 600;
+		height: 32px;
+		line-height: 32px;
+		margin: 0;
+		padding-left: 17px;
+	}
+	&__subtitle {
+		clear: both;
+		color: $claster-default;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 16px;
+		margin: 0;
+		padding: $site-padding;
+		.btn {
+			float: right;
+			margin-top: -8px;
+		}
+		&.sub-2 {
+			font-size: 14px;
+			color: $claster-2;
+		}
+		&.sub-3 {
+			font-size: 13px;
+			color: $claster-3;
+		}
+		&.sub-4 {
+			font-size: 13px;
+			color: $claster-4;
+		}
+		&.sub-5 {
+			font-size: 11px;
+			color: $claster-5;
+			text-transform: uppercase;
+		}
+	}
+	&__subtitle-text {
+		border-bottom: solid 1px #397373;
+		padding-bottom: $site-padding * 2;
+	}
+	&__container {
+		padding: $site-padding;
+	}
+	&__footer {
+		overflow: hidden;
+		padding: $site-padding;
+	}
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__item {
+		padding: 0 $site-padding;
+		@include clearfix();
+		&.error {
+			.form-type-2__label {
+				color: $alert;
+			}
+			.input {
+				border-color: $alert;
+			}
+		}
+	}
+	&__label {
+		position: relative;
+		float: left;
+		font-size: 13px;
+		font-weight: 600;
+		color: #666666;
+		padding: $site-padding;
+		text-align: right;
+		text-transform: uppercase;
+		width: (376px / 976px) * 100%;
+		&_no-top-bottom-padding {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	&__required {
+		color: $alert;
+		display: inline-block;
+		position: absolute;
+		top: $site-padding;
+	}
+	&__value {
+		width: (592px / 976px) * 100%;
+		padding: $site-padding;
+		float: left;
+		&_no-top-bottom-padding {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+}
