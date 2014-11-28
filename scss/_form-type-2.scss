@@ -71,7 +71,8 @@
 			.form-type-2__label {
 				color: $alert;
 			}
-			.input {
+			.input,
+			.textarea {
 				border-color: $alert;
 			}
 			.hint {

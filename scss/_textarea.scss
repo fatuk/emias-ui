@@ -2,6 +2,7 @@
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 50%);
 	border: solid 1px #ddd;
 	color: #444;
+	float: left;
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 16px;
@@ -15,5 +16,8 @@
 		border: solid 1px #ddd !important;
 		color: #444 !important;
 		cursor: not-allowed;
+	}
+	&_half {
+		width: 50%;
 	}
 }
