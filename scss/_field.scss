@@ -15,4 +15,7 @@
 		float: left;
 		padding: $site-padding - 2 $site-padding;
 	}
+	&_auto-width {
+		display: inline-block;
+	}
 }

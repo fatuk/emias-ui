@@ -1,15 +1,21 @@
 .date {
 	position: relative;
-	width: 175px;
+	width: $site-padding * 22;
 	.icon {
-		color: #BBBBBB;
+		color: $gray-darken;
 		font-size: 12px;
-		line-height: 32px;
+		line-height: $site-padding * 4;
 		position: absolute;
 		right: 0;
 		top: 0;
+		width: $site-padding * 4;
+		height: $site-padding * 4;
+		&:before {
+			font-size: 120%;
+			line-height: ($site-padding * 4) - 2;
+		}
 	}
 	.input {
-		padding-right: 30px;
+		padding-right: $site-padding * 4;
 	}
 }
