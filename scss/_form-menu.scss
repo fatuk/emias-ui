@@ -1,8 +1,6 @@
 .form-menu {
-	height: 32px;
-	position: absolute;
-	right: 16px;
-	top: 0;
+    float: right;
+	position: relative;
 	&__list {
 		list-style: none;
 		margin: 0;
@@ -12,7 +10,7 @@
 	&__item {
 		float: left;
 		&.expanded {
-			background: #444444;
+			background: $base-color-darken;
 			.form-menu__link {
 				color: $white;
 			}
@@ -25,21 +23,25 @@
 		}
 	}
 	&__link {
-		color: #888;
+		color: $base-color-light;
 		display: inline-block;
 		font-size: 10px;
 		font-weight: 600;
-		line-height: 32px;
-		padding: 0 16px;
+		line-height: $site-padding * 2;
+		padding: $site-padding;
 		text-decoration: none;
 		text-transform: uppercase;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+        }
 		.icon {
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
-		&_dropdown {
-			padding-right: 30px;
+          height: $site-padding;
+          line-height: $site-padding;
+          text-align: center;
 		}
 	}
+    &__element {
+        padding: 0 $site-padding;
+    }
 }

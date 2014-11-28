@@ -1,7 +1,18 @@
 .field {
 	position: relative;
 	text-align: center;
+	@include clearfix();
 	&_auto-width {
 		display: inline-block;
+	}
+	&__hint {
+		text-align: left;
+		padding: $site-padding;
+		width: 100%;
+		clear: both;
+	}
+	&__units {
+		float: left;
+		padding: $site-padding - 2 $site-padding;
 	}
 }

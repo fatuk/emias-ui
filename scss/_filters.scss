@@ -1,0 +1,22 @@
+.filter {
+  &__container {
+
+  }
+  &__list {
+
+  }
+  &__nav {
+    overflow: hidden;
+    padding: $site-padding * 2;
+    .btn {
+      margin: 0;
+      width: 33%;
+      &:last-child{
+        width: 34%;
+      }
+    }
+  }
+  &__item {
+
+  }
+}

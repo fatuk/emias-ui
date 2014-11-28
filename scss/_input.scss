@@ -15,6 +15,10 @@
 		color: #444 !important;
 		cursor: not-allowed;
 	}
+	&_half {
+		width: 50%;
+		float: left;
+	}
 }
 
 ::-webkit-input-placeholder {

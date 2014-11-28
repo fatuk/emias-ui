@@ -51,7 +51,10 @@
 		}
 	}
 	&__text {
-		line-height: $site-padding * 4;
+		display: inline-block;
+		height: ($site-padding * 4);
+		line-height: ($site-padding * 4) - 2;
+		padding-right: $site-padding * 1;
 	}
 	&_icon {
 		padding: 0;

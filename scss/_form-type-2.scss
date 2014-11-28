@@ -6,8 +6,10 @@
 		background: $green-sea-darken;
 		height: $site-padding * 4;
 		position: relative;
+		@include clearfix();
 	}
 	&__title {
+		float: left;
 		color: #f2ffff;
 		font-size: 13px;
 		font-weight: 600;
@@ -72,6 +74,9 @@
 			.input {
 				border-color: $alert;
 			}
+			.hint {
+				display: block;
+			}
 		}
 	}
 	&__label {
@@ -80,10 +85,11 @@
 		font-size: 13px;
 		font-weight: 600;
 		color: #666666;
-		padding: $site-padding;
+		padding: $site-padding - 2 $site-padding;
 		text-align: right;
 		text-transform: uppercase;
 		width: (376px / 976px) * 100%;
+		line-height: $site-padding * 4;
 		&_no-top-bottom-padding {
 			padding-top: 0;
 			padding-bottom: 0;

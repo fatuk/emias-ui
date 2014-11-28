@@ -1,0 +1,24 @@
+.icons-nav {
+    display: block;
+    float: right;
+    position: relative;
+    &__container {}
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__item {
+      float: left;
+      padding: 0 $site-padding;
+      .icon {
+        line-height: 16px;
+      }
+    }
+    &__element {
+      color: $base-color-light;
+      &:hover{
+        color: $white;
+      }
+    }
+}

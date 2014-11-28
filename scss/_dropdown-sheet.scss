@@ -1,29 +1,37 @@
 .dropdown-sheet {
+    background: $base-color-darken;
 	display: none;
+    padding: $site-padding;
 	position: absolute;
-	right: -16px;
-	top: 32px;
-	width: 512px;
-	z-index: 5;
+	right: 0;
+	top: 100%;
+	width: $site-column * 7 + $site-padding * 3;
+	z-index: 10;
+    .btn {
+      border-color: $base-color-light;
+      margin-bottom: $site-padding;
+    }
 	&__list {
+        background: $base-color-darken-1;
+        clear: both;
 		list-style: none;
-		margin: 0;
-		padding: 0;
+		margin: $site-padding 0;
+		padding: $site-padding;
 	}
 	&__item {
-		background: #444;
-		border-top: solid 1px #3a3a3a;
-		padding: 0 9px;
+		border-top: solid 1px $base-color-dark;
+        line-height: $site-padding * 3;
+        overflow: hidden;
+        padding: $site-padding;
 		position: relative;
 		transition: background .3s;
 		&:first-child {
 			border-top: none;
 		}
 		&:hover {
-			background: #3a3a3a;
-			border-color: #333;
+			background: $base-color-darken;
+            text-decoration: none;
 			& + .dropdown-sheet__item {
-				border-color: #333;
 			}
 			.dropdown-sheet__close {
 				display: block;
@@ -34,80 +42,77 @@
 		}
 	}
 	&__link {
-		color: #aaa;
-		display: inline-block;
+		color: $base-color-light;
+        display: block;
 		font-size: 12px;
 		font-weight: 600;
-		height: 32px;
-		line-height: 32px;
+		line-height: 20px;
+        overflow: hidden;
+        position: relative;
 		text-decoration: none;
 		transition: color .3s;
-		width: 100%;
-	}
-	&__close {
-		display: none;
-		position: absolute;
-		right: 0;
-		top: 0;
+        &:hover {
+          text-decoration: none;
+        }
 	}
 	&__footer {
-		border-top: solid 1px #303030;
-		display: inline-block;
+		border: solid 1px $base-color-light;
+		display: block;
 		height: 32px;
 		position: relative;
 		width: 100%;
 	}
 	&__btn {
-		background: linear-gradient(to bottom,  #484848 0%, #333333 100%);
-		color: #ccc;
+		color: $base-color-light;
+        display: block;
 		font-size: 12px;
 		font-weight: 600;
-		line-height: 31px;
-		position: absolute;
+        height: 30px;
+		line-height: 14px;
+		position: relative;
+        text-align: center;
 		text-decoration: none;
-		top: 0;
 		transition: background .3s;
 		z-index: 5;
 		&:hover {
-			background: linear-gradient(to bottom,  #484848 0%, #333333 50%);
+			background: $base-color-darken;
 		}
 		&:active {
-			background: linear-gradient(to bottom,  #484848 0%, #333333 50%);
+			background: $base-color-darken;
 			color: $white;
 		}
 		.icon {
-			height: 31px;
-			position: absolute;
+            color: $white;
+			position: relative;
 			top: 0;
-			width: 10px;
 		}
-		&_prev {
-			border-right: solid 1px #303030;
-			left: 9px;
-			padding-left: 20px;
-			padding-right: 16px;
-			.icon {
-				left: 0;
-			}
+		&_prev,
+        &_prev_all {
+            border-right: $base-color-light 1px solid;
+            float: left;
+            padding: $site-padding;
 		}
-		&_next {
-			border-left: solid 1px #303030;
-			padding-left: 16px;
-			padding-right: 20px;
-			right: 9px;
-			.icon {
-				right: 0;
-			}
+		&_next,
+        &_next_all {
+            border-left: $base-color-light 1px solid;
+            float: right;
+            padding: $site-padding;
+            &_all {
+              border-left: $base-color-light 1px solid;
+              float: right;
+              padding: $site-padding;
+            }
 		}
 	}
 	&__pages {
-		background: linear-gradient(to bottom,  #484848 0%, #333333 100%);
-		color: #ccc;
+		background: $base-color-dark;
+		color: $white;
 		font-size: 12px;
 		font-weight: 600;
-		height: 32px;
+		height: 30px;
 		left: 0;
-		line-height: 32px;
+		line-height: 16px;
+        padding: $site-padding 0;
 		position: absolute;
 		text-align: center;
 		top: 0;
