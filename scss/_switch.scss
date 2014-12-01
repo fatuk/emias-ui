@@ -26,7 +26,11 @@
 				border-color: $gray-darken-1;
 				color: $white;
 			}
+			.switch__space {
+				border-color: $gray;
+			}
 			.switch__no {
+				border-color: $gray;
 				color: $gray-darken-1;
 			}
 		}
@@ -43,7 +47,7 @@
 		margin-bottom: 0;
 	}
 	&__space {
-		border: solid 1px #ddd;
+		border: solid 1px $gray-darken;
 		height: $site-padding * 4;
 		left: 48px;
 		position: absolute;
@@ -68,7 +72,7 @@
 	}
 	&__no {
 		background: $white;
-		border: solid 1px #ddd;
+		border: solid 1px $gray-darken;
 		border-right: none;
 		color: $gray-darken-2;
 		display: inline-block;
