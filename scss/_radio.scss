@@ -1,7 +1,15 @@
 .radio {
-	display: inline-block;
 	position: relative;
 	@include clearfix();
+	margin-top: 0;
+	margin-right: $site-padding * 2;
+	float: left;
+	&:last-child {
+		margin-right: 0;
+	}
+	& + .radio {
+		margin-top: 0;
+	}
 	input[type="radio"] {
 		left: 0;
 		opacity: 0;
@@ -9,7 +17,7 @@
 		top: 0;
 		&:checked + .radio__dot {
 			&:before {
-				background: #666;
+				background: $gray-darken-2;
 				border-radius: 50%;
 				content: '';
 				display: inline-block;
@@ -24,9 +32,9 @@
 		}
 	}
 	&__dot {
-		background-color: #f9f9f9;
+		background-color: $white;
 		border-radius: 50%;
-		border: solid 1px #ddd;
+		border: solid 1px $gray;
 		float: left;
 		height: 16px;
 		margin-right: 8px;
