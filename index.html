@@ -292,6 +292,35 @@
 			</li>
 			<li class="form-type-2__item">
 				<div class="form-type-2__label">
+					Два элемента подряд
+				</div>
+				<div class="form-type-2__value">
+					<div class="field field_float-left field_auto-width">
+						<input type="text" class="input" name="" id="input-text-1" placeholder="Текстовое поле 1">
+					</div>
+					<div class="field field_auto-width">
+						<input type="text" class="input" name="" id="input-text-2" placeholder="Текстовое поле 2">
+					</div>
+				</div>
+			</li>
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
+					Два элемента подряд
+				</div>
+				<div class="form-type-2__value">
+					<div class="field field_float-left field_auto-width">
+						<input type="text" class="input" name="" id="input-text-1" placeholder="Текстовое поле 1">
+					</div>
+					<div class="field field_auto-width">
+						<button class="btn btn_icon-text">
+							<i class="icon icon-edit"></i>
+							<span class="btn__text">Редактировать</span>
+						</button>
+					</div>
+				</div>
+			</li>
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
 					Название поля
 				</div>
 				<div class="form-type-2__value">
@@ -976,102 +1005,144 @@
 			</li>
 		</ul>
 	</div>
-</div><div class="form">
-    <header class="form__header">
-        <h1 class="form__title">
-            Форма (number)
-        </h1>
-    </header>
-    <!-- Form row -->
-    <table class="form__row">
-        <tr>
-            <td class="form__row-label">
-                <label for="number-1" class="label">
-                    <span class="label__text">
-                        Normal
-                    </span>
-                </label>
-            </td>
-            <td class="form__row-field">
-                <!-- Switch -->
-                <div class="number">
-                    <div class="number__container">
-                        <div class="number__btn number__btn_minus">
-                            <i class="icon icon-minus"></i>
-                        </div>
-                        <input type="number" class="input" name="temperature" id="number-1" placeholder="Температура тела" min="33" max="42" step="0.1" value="35">
-                        <div class="number__btn number__btn_plus">
-                            <i class="icon icon-plus"></i>
-                        </div>
-                    </div>
-                    <div class="number__unit">
-                        град.
-                    </div>
-                </div>
-            </td>
-            <td class="form__row-aux"></td>
-        </tr>
-    </table>
-    <!-- Form row -->
-    <table class="form__row active">
-        <tr>
-            <td class="form__row-label">
-                <label for="number-2" class="label">
-                    <span class="label__text">
-                        Active
-                    </span>
-                </label>
-            </td>
-            <td class="form__row-field">
-                <!-- Switch -->
-                <div class="number">
-                    <div class="number__container">
-                        <div class="number__btn number__btn_minus">
-                            <i class="icon icon-minus"></i>
-                        </div>
-                        <input type="number" class="input" name="temperature" id="number-2" placeholder="Температура тела" min="33" max="42" step="0.1" value="35">
-                        <div class="number__btn number__btn_plus">
-                            <i class="icon icon-plus"></i>
-                        </div>
-                    </div>
-                    <div class="number__unit">
-                        град.
-                    </div>
-                </div>
-            </td>
-            <td class="form__row-aux"></td>
-        </tr>
-    </table>
-    <!-- Form row -->
-    <table class="form__row disabled">
-        <tr>
-            <td class="form__row-label">
-                <label for="number-3" class="label">
-                    <span class="label__text">
-                        Disabled
-                    </span>
-                </label>
-            </td>
-            <td class="form__row-field">
-                <!-- Switch -->
-                <div class="number">
-                    <div class="number__container">
-                        <div class="number__btn number__btn_minus">
-                            <i class="icon icon-minus"></i>
-                        </div>
-                        <input disabled type="number" class="input" name="temperature" id="number-3" placeholder="Температура тела" min="33" max="42" step="0.1" value="35">
-                        <div class="number__btn number__btn_plus">
-                            <i class="icon icon-plus"></i>
-                        </div>
-                    </div>
-                    <div class="number__unit">
-                        град.
-                    </div>
-                </div>
-            </td>
-            <td class="form__row-aux"></td>
-        </tr>
-    </table>
+</div>
+<div class="form-type-2">
+	<header class="form-type-2__header">
+		<h2 class="form-type-2__title">
+			Форма (number)
+		</h2>
+		<!-- Form menu -->
+		<div class="form-menu">
+			<ul class="form-menu__list">
+				<li class="form-menu__item">
+					<a href="#" class="form-menu__link form-menu__link_dropdown">
+						<span class="form-menu__element">Шаблон</span><i class="icon icon-caret-down"></i>
+					</a>
+<!-- dropdown sheet -->
+<div class="dropdown-sheet">
+	<a href="#" title="" class="btn">Добавить</a>
+	<ul class="dropdown-sheet__list">
+		<li class="dropdown-sheet__item">
+			<div class="icons-nav">
+				<ul class="icons-nav__list">
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-close"></i></a></li>
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-refresh"></i></a></li>
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-edit"></i></a></li>
+				</ul>
+			</div>
+			<a href="#" class="dropdown-sheet__link">
+				Название шаблона
+			</a>
+		</li>
+		<li class="dropdown-sheet__item">
+			<div class="icons-nav">
+				<ul class="icons-nav__list">
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-close"></i></a></li>
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-refresh"></i></a></li>
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-edit"></i></a></li>
+				</ul>
+			</div>
+			<a href="#" class="dropdown-sheet__link">
+				Название шаблона
+			</a>
+		</li>
+		<li class="dropdown-sheet__item">
+			<div class="icons-nav">
+				<ul class="icons-nav__list">
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-close"></i></a></li>
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-refresh"></i></a></li>
+					<li class="icons-nav__item"><a href="#" class="icons-nav__element"><i class="icon icon-edit"></i></a></li>
+				</ul>
+			</div>
+			<a href="#" class="dropdown-sheet__link">
+				Название шаблона
+			</a>
+		</li>
+	</ul>
+	<footer class="dropdown-sheet__footer">
+		<a href="#" class="dropdown-sheet__btn dropdown-sheet__btn_prev_all">
+			<i class="icon icon-first-step"></i>
+		</a>
+		<a href="#" class="dropdown-sheet__btn dropdown-sheet__btn_prev">
+			<i class="icon icon-caret-left"></i>
+		</a>
+		<div class="dropdown-sheet__pages">
+			10 из 20
+		</div>
+		<a href="#" class="dropdown-sheet__btn dropdown-sheet__btn_next_all">
+			<i class="icon icon-last-step"></i>
+		</a>
+		<a href="#" class="dropdown-sheet__btn dropdown-sheet__btn_next">
+			<i class="icon icon-caret-right"></i>
+		</a>
+	</footer>
+</div>				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="form-type-2__container">
+		<div class="form-type-2__subtitle">
+			<div class="form-type-2__subtitle-text">
+				Кластер 1
+			</div>
+		</div>
+		<ul class="form-type-2__list">
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
+					Название поля
+				</div>
+				<div class="form-type-2__value">
+					<div class="field field_auto-width">
+						<!-- Number -->
+						<div class="number">
+							<div class="number__container">
+								<div class="number__btn number__btn_minus">
+									<i class="icon icon-minus"></i>
+								</div>
+								<input type="number" class="input" name="temperature" id="number-1" placeholder="Температура тела" min="33" max="42" step="0.1" value="35">
+								<div class="number__btn number__btn_plus">
+									<i class="icon icon-plus"></i>
+								</div>
+							</div>
+							<div class="number__unit">
+								град.
+							</div>
+						</div>
+						<div class="field__hint">
+							Значение от [min] до [max]
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
+					Название неактивоного поля
+				</div>
+				<div class="form-type-2__value">
+					<div class="field field_auto-width disabled">
+						<!-- Number -->
+						<div class="number">
+							<div class="number__container">
+								<div class="number__btn number__btn_minus">
+									<i class="icon icon-minus"></i>
+								</div>
+								<input disabled type="number" class="input" name="temperature" id="number-1" placeholder="Температура тела" min="33" max="42" step="0.1" value="35">
+								<div class="number__btn number__btn_plus">
+									<i class="icon icon-plus"></i>
+								</div>
+							</div>
+							<div class="number__unit">
+								град.
+							</div>
+						</div>
+						<div class="field__hint">
+							Значение от [min] до [max]
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
 </div><div class="form">
     <header class="form__header">
         <h1 class="form__title">

@@ -9,14 +9,14 @@ input::-webkit-inner-spin-button {
 
 .number {
 	@include clearfix();
-	display: inline-block;
+	float: left;
 	&__container {
 		display: inline-block;
 		float: left;
 		margin-right: 16px;
 	}
 	&__btn {
-		background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
+		background: $gray-light;
 		border: solid 1px #ddd;
 		cursor: pointer;
 		height: 32px;
@@ -24,11 +24,18 @@ input::-webkit-inner-spin-button {
 		width: 32px;
 		.icon-plus,
 		.icon-minus {
-			transition: opacity .3s;
-			opacity: .7;
+			color: $gray-darken-2;
+			width: $site-padding * 4;
+			height: $site-padding * 4;
+			line-height: ($site-padding * 4) - 2px;
+			&:before {
+				width: $site-padding * 4;
+				height: $site-padding * 4;
+				line-height: ($site-padding * 4) - 2px;
+			}
 		}
 		&:hover {
-			background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 50%);
+			background: $white;
 			.icon-plus,
 			.icon-minus {
 				opacity: 1;

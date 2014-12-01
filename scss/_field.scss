@@ -2,8 +2,12 @@
 	position: relative;
 	text-align: center;
 	@include clearfix();
-	&_auto-width {
-		display: inline-block;
+	margin-right: $site-padding;
+	&:last-child {
+		margin-right: 0;
+	}
+	&_float-left {
+		float: left;
 	}
 	&__hint {
 		text-align: left;
@@ -17,5 +21,19 @@
 	}
 	&_auto-width {
 		display: inline-block;
+	}
+	&.disabled {
+		.number {
+			.input {
+				background: $white;
+				color: $gray-darken-1 !important;
+			}
+		}
+		.number__btn {
+			background: $white;
+			.icon {
+				color: $gray-darken-1;
+			}
+		}
 	}
 }
