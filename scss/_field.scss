@@ -35,5 +35,11 @@
 				color: $gray-darken-1;
 			}
 		}
+		.checkbox__check {
+			background: $gray-light;
+		}
+	}
+	.checkbox {
+		margin-top: $site-padding;
 	}
 }

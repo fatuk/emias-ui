@@ -1,9 +1,13 @@
 .checkbox {
-	display: inline-block;
+	float: left;
 	margin: 0;
 	min-height: inherit;
 	position: relative;
+	margin-right: $site-padding * 2;
 	@include clearfix();
+	&:last-child {
+		margin-right: 0;
+	}
 	input[type="checkbox"] {
 		left: 0;
 		opacity: 0;
@@ -17,8 +21,8 @@
 		}
 	}
 	&__check {
-		background-color: #f9f9f9;
-		border: solid 1px #ddd;
+		background-color: $white;
+		border: solid 1px $gray;
 		float: left;
 		height: 16px;
 		margin: 0;
@@ -41,7 +45,7 @@
 		}
 	}
 	&__label {
-		color: #888;
+		color: $gray-darken-2;
 		float: left;
 		font-size: 13px;
 		font-weight: normal;
