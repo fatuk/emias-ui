@@ -1,55 +1,81 @@
-<div class="form">
-    <header class="form__header">
-        <h1 class="form__title">
-            Форма (switch)
-        </h1>
-    </header>
-    <!-- Form row -->
-    <table class="form__row">
-        <tr>
-            <td class="form__row-label">
-                <label for="switch-1" class="label">
-                    <span class="label__text">
-                        Normal state
-                    </span>
-                </label>
-            </td>
-            <td class="form__row-field">
-                <!-- Switch -->
-                <div class="switch">
-                    <input type="checkbox" class="input" name="" id="switch-1">
-                    <label for="switch-1" class="switch__container">
-                        <div class="switch__no">Нет</div>
-                        <div class="switch__space"></div>
-                        <div class="switch__yes">Да</div>
-                    </label>
-                </div>
-            </td>
-            <td class="form__row-aux"></td>
-        </tr>
-    </table>
-    <!-- Form row -->
-    <table class="form__row disabled">
-        <tr>
-            <td class="form__row-label">
-                <label for="switch-2" class="label">
-                    <span class="label__text">
-                        Disabled
-                    </span>
-                </label>
-            </td>
-            <td class="form__row-field">
-                <!-- Switch -->
-                <div class="switch">
-                    <input disabled checked type="checkbox" class="input" name="" id="switch-2">
-                    <label for="switch-2" class="switch__container">
-                        <div class="switch__no">Нет</div>
-                        <div class="switch__space"></div>
-                        <div class="switch__yes">Да</div>
-                    </label>
-                </div>
-            </td>
-            <td class="form__row-aux"></td>
-        </tr>
-    </table>
+<div class="form-type-2">
+	<header class="form-type-2__header">
+		<h2 class="form-type-2__title">
+			Форма (switch)
+		</h2>
+		<!-- Form menu -->
+		<div class="form-menu">
+			<ul class="form-menu__list">
+				<li class="form-menu__item">
+					<a href="#" class="form-menu__link form-menu__link_dropdown">
+						<span class="form-menu__element">Шаблон</span><i class="icon icon-caret-down"></i>
+					</a>
+					{{>form-menu}}
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="form-type-2__container">
+		<div class="form-type-2__subtitle">
+			<div class="form-type-2__subtitle-text">
+				Кластер 1
+			</div>
+		</div>
+		<ul class="form-type-2__list">
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
+					Название поля
+				</div>
+				<div class="form-type-2__value">
+					<div class="field field_auto-width">
+						<!-- Switch -->
+						<div class="switch">
+							<input type="checkbox" class="input" name="" id="switch-1">
+							<label for="switch-1" class="switch__container">
+								<div class="switch__no">Нет</div>
+								<div class="switch__space"></div>
+								<div class="switch__yes">Да</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
+					Название неактивоного поля
+				</div>
+				<div class="form-type-2__value">
+					<div class="field field_auto-width disabled">
+						<!-- Switch -->
+						<div class="switch">
+							<input checked disabled type="checkbox" class="input" name="" id="switch-2">
+							<label for="switch-2" class="switch__container">
+								<div class="switch__no">Нет</div>
+								<div class="switch__space"></div>
+								<div class="switch__yes">Да</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
+					Название неактивоного поля
+				</div>
+				<div class="form-type-2__value">
+					<div class="field field_auto-width disabled">
+						<!-- Switch -->
+						<div class="switch">
+							<input disabled type="checkbox" class="input" name="" id="switch-3">
+							<label for="switch-3" class="switch__container">
+								<div class="switch__no">Нет</div>
+								<div class="switch__space"></div>
+								<div class="switch__yes">Да</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
 </div>

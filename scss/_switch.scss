@@ -1,6 +1,6 @@
 .switch {
-	display: inline-block;
-	height: 32px;
+	float: left;
+	height: $site-padding * 4;
 	overflow: hidden;
 	position: relative;
 	width: 96px;
@@ -12,30 +12,39 @@
 		position: absolute;
 		top: 0;
 		width: 100%;
+		margin: 0;
 		z-index: 5;
 		&:checked + .switch__container {
 			left: -48px;
-			.switch__space {
-				border-radius: 2px 0 0 2px !important;
-			}
 		}
 		&[disabled] {
 			cursor: not-allowed;
 		}
+		&[disabled] + .switch__container {
+			.switch__yes {
+				background: $gray-darken-1;
+				border-color: $gray-darken-1;
+				color: $white;
+			}
+			.switch__no {
+				color: $gray-darken-1;
+			}
+		}
 	}
 	&__container {
 		display: inline-block;
-		height: 32px;
+		height: $site-padding * 4;
+		cursor: pointer;
 		left: 0;
 		position: absolute;
 		top: 0;
 		transition: all .3s;
 		width: (48px * 3);
+		margin-bottom: 0;
 	}
 	&__space {
-		border-radius: 0 2px 2px 0;
 		border: solid 1px #ddd;
-		height: 32px;
+		height: $site-padding * 4;
 		left: 48px;
 		position: absolute;
 		top: 0;
@@ -43,33 +52,31 @@
 	}
 	&__yes {
 		background: $light-blue;
-		border-radius: 0 2px 2px 0;
 		border: solid 1px $blue;
 		color: $white;
 		display: inline-block;
 		font-size: 10px;
 		font-weight: 600;
-		height: 32px;
-		line-height: 32px;
+		height: $site-padding * 4;
+		line-height: ($site-padding * 4) - 2px;
 		position: absolute;
-		right: 0;
+		left: (48px * 2);
 		text-align: center;
 		text-transform: uppercase;
 		top: 0;
-		width: 48px;
+		width: (48px - 1px);
 	}
 	&__no {
-		background: linear-gradient(to top,  rgba(0,0,0,0.03) 0%,rgba(0,0,0,0) 100%);
-		border-radius: 2px 0 0 2px;
-		border-right: none;
+		background: $white;
 		border: solid 1px #ddd;
-		color: #888;
+		border-right: none;
+		color: $gray-darken-2;
 		display: inline-block;
 		font-size: 10px;
 		font-weight: 600;
-		height: 32px;
+		height: $site-padding * 4;
 		left: 0;
-		line-height: 32px;
+		line-height: ($site-padding * 4) - 2px;
 		position: absolute;
 		text-align: center;
 		text-transform: uppercase;
