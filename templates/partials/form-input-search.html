@@ -1,3 +1,156 @@
+<div class="form-type-2">
+    <header class="form-type-2__header">
+        <h2 class="form-type-2__title">
+            Архитип
+        </h2>
+        <!-- Form menu -->
+        <div class="form-menu">
+            <ul class="form-menu__list">
+                <li class="form-menu__item">
+                    <a href="#" class="form-menu__link form-menu__link_dropdown">
+                        <span class="form-menu__element">Шаблон</span><i class="icon icon-caret-down"></i>
+                    </a>
+                    {{>form-menu}}
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="form-type-2__container">
+        <div class="form-type-2__subtitle">
+            <div class="form-type-2__subtitle-text">
+                Кластер 1
+            </div>
+        </div>
+        <ul class="form-type-2__list">
+            <li class="form-type-2__item error">
+                <div class="form-type-2__label">
+                    Название поля
+                    <sup class="form-type-2__required">*</sup>
+                </div>
+                <div class="form-type-2__value">
+                    <div class="field">
+                        <input type="text" class="input" name="" id="input-text-1" placeholder="Текстовое поле">
+                        <div class="hint hint_error">
+                            <div class="hint__text">
+                                Обязательное поле
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="form-type-2__subtitle sub-2">
+            <div class="form-type-2__subtitle-text">
+                Кластер 2
+            </div>
+        </div>
+        <ul class="form-type-2__list">
+            <li class="form-type-2__item">
+                <div class="form-type-2__label">
+                    Поле
+                </div>
+                <div class="form-type-2__value">
+                    <div class="field">
+                        <input disabled type="text" class="input" name="" id="input-text-1" placeholder="Текстовое поле">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="form-type-2__subtitle sub-3">
+            <div class="form-type-2__subtitle-text">
+                Кластер 3
+            </div>
+        </div>
+        <ul class="form-type-2__list">
+            <li class="form-type-2__item">
+                <div class="form-type-2__label">
+                    Название поля
+                </div>
+                <div class="form-type-2__value">
+                    <div class="field">
+                        <input type="text" class="input" name="" id="input-text-1" placeholder="Текстовое поле">
+                        <div class="field__hint">
+                            Значение от [min] до [max]
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="form-type-2__item">
+                <div class="form-type-2__label">
+                    Длинное название поля
+                </div>
+                <div class="form-type-2__value">
+                    <div class="field">
+                        <input type="text" class="input input_half" name="" id="input-text-1" placeholder="Текстовое поле">
+                        <div class="field__units">
+                            Ед. измерения
+                        </div>
+                        <div class="field__hint">
+                            Значение от [min] до [max]
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="form-type-2__item">
+                <div class="form-type-2__label">
+                    Название поля
+                </div>
+                <div class="form-type-2__value">
+                    <div class="field">
+                        <input type="text" class="input" name="" id="input-text-1" placeholder="Текстовое поле">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="form-type-2__subtitle sub-4">
+            <div class="form-type-2__subtitle-text">
+                Кластер 4
+            </div>
+        </div>
+        <ul class="form-type-2__list">
+            <li class="form-type-2__item">
+                <div class="form-type-2__label">
+                    Название поля
+                </div>
+                <div class="form-type-2__value">
+                    <div class="field">
+                        <input type="text" class="input" name="" id="input-text-1" placeholder="Текстовое поле">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="form-type-2__subtitle sub-5">
+            <div class="form-type-2__subtitle-text">
+                Кластер 5
+            </div>
+        </div>
+        <ul class="form-type-2__list">
+            <li class="form-type-2__item">
+                <div class="form-type-2__label">
+                    Название поля
+                </div>
+                <div class="form-type-2__value">
+                    <div class="field">
+                        <input type="text" class="input" name="" id="input-text-1" placeholder="Текстовое поле">
+                    </div>
+                </div>
+            </li>
+            <li class="form-type-2__item">
+                <div class="form-type-2__label">
+                    Кнопки
+                </div>
+                <div class="form-type-2__value">
+                    <div class="field">
+                        {{>buttons}}
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
 <div class="form">
     <header class="form__header">
         <h1 class="form__title">
