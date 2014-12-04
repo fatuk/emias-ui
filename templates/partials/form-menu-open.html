@@ -6,7 +6,7 @@
 		<!-- Form menu -->
 		<div class="form-menu">
 			<ul class="form-menu__list">
-				<li class="form-menu__item expanded">
+				<li class="form-menu__item form-menu__item expanded">
 					<a href="#" class="form-menu__link form-menu__link_dropdown">
 						<span class="form-menu__element">Шаблон</span><i class="icon icon-caret-down"></i>
 					</a>
@@ -16,11 +16,94 @@
 		</div>
 	</header>
 	<div class="form-type-2__container">
+		<!-- Subtitle -->
 		<div class="form-type-2__subtitle">
-			<div class="form-type-2__subtitle-text">
-				Кластер 1
+			<div class="form-type-2__subtitle-container">
+				<div class="form-type-2__subtitle-text">
+					Кластер 1
+				</div>
+				<!-- Form menu -->
+				<div class="form-menu">
+					<ul class="form-menu__list">
+						<li class="form-menu__item">
+							<a href="#" class="form-menu__link form-menu__link_dropdown">
+								<span class="form-menu__element">Шаблон</span><i class="icon icon-caret-down"></i>
+							</a>
+							{{>form-menu}}
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
+		<!-- List -->
+		<ul class="form-type-2__list">
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
+					Название поля
+				</div>
+				<div class="form-type-2__value">
+					<div class="field">
+						<textarea name="" class="textarea" placeholder="normal" id="textarea-3"></textarea>
+						<div class="hint hint_error">
+							<div class="hint__text">
+								Обязательное поле
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="form-type-2__item error">
+				<div class="form-type-2__label">
+					Название поля
+					<sup class="form-type-2__required">*</sup>
+				</div>
+				<div class="form-type-2__value">
+					<div class="field">
+						<textarea name="" class="textarea" placeholder="normal" id="textarea-3"></textarea>
+						<div class="hint hint_error">
+							<div class="hint__text">
+								Обязательное поле
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="form-type-2__item">
+				<div class="form-type-2__label">
+					Название поля
+				</div>
+				<div class="form-type-2__value">
+					<div class="field">
+						<textarea name="" class="textarea" placeholder="normal" id="textarea-3"></textarea>
+						<div class="hint hint_error">
+							<div class="hint__text">
+								Обязательное поле
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<!-- Subtitle -->
+		<div class="form-type-2__subtitle sub-2">
+			<div class="form-type-2__subtitle-container">
+				<div class="form-type-2__subtitle-text">
+					Кластер 2
+				</div>
+				<!-- Form menu -->
+				<div class="form-menu">
+					<ul class="form-menu__list">
+						<li class="form-menu__item expanded">
+							<a href="#" class="form-menu__link form-menu__link_dropdown">
+								<span class="form-menu__element">Шаблон</span><i class="icon icon-caret-down"></i>
+							</a>
+							{{>form-menu}}
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- List -->
 		<ul class="form-type-2__list">
 			<li class="form-type-2__item">
 				<div class="form-type-2__label">

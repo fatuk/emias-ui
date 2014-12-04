@@ -26,31 +26,52 @@
 		line-height: 16px;
 		margin: 0;
 		padding: $site-padding;
-		.btn {
-			float: right;
-			margin-top: -8px;
-		}
 		&.sub-2 {
 			font-size: 14px;
 			color: $claster-2;
+			.form-type-2__subtitle-container {
+				border-color: $claster-2;
+			}
 		}
 		&.sub-3 {
 			font-size: 13px;
 			color: $claster-3;
+			.form-type-2__subtitle-container {
+				border-color: $claster-3;
+			}
 		}
 		&.sub-4 {
 			font-size: 13px;
 			color: $claster-4;
+			.form-type-2__subtitle-container {
+				border-color: $claster-4;
+			}
 		}
 		&.sub-5 {
 			font-size: 11px;
 			color: $claster-5;
+			.form-type-2__subtitle-container {
+				border-color: $claster-5;
+			}
 			text-transform: uppercase;
 		}
+		.form-menu {
+			float: right;
+		}
+		.form-menu__link {
+			transition: background .3s, color .3s;
+			&:hover {
+				background: $base-color-darken;
+			}
+		}
+	}
+	&__subtitle-container {
+		border-bottom: solid 1px #397373;
+		@include clearfix();
 	}
 	&__subtitle-text {
-		border-bottom: solid 1px #397373;
 		padding-bottom: $site-padding * 2;
+		float: left;
 	}
 	&__container {
 		padding: $site-padding;
