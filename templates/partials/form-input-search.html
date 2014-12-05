@@ -16,27 +16,41 @@
 		</div>
 	</header>
 	<div class="form-type-2__container">
+		<!-- Subtitle -->
 		<div class="form-type-2__subtitle">
-			<div class="form-type-2__subtitle-text">
-				Кластер 1
+			<div class="form-type-2__subtitle-container">
+				<div class="form-type-2__subtitle-text">
+					Кластер 1
+				</div>
+				<!-- Form menu -->
+				<div class="form-menu">
+					<ul class="form-menu__list">
+						<li class="form-menu__item">
+							<a href="#" class="form-menu__link form-menu__link_dropdown">
+								<span class="form-menu__element">Шаблон</span><i class="icon icon-caret-down"></i>
+							</a>
+							{{>form-menu}}
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
+		<!-- List -->
 		<ul class="form-type-2__list">
-			<li class="form-type-2__item error">
+			<li class="form-type-2__item">
 				<div class="form-type-2__label">
-					Название поля
-					<sup class="form-type-2__required">*</sup>
+					Поиск
 				</div>
 				<div class="form-type-2__value">
 					<div class="field">
 						<!-- Search -->
 						<div class="search">
-							<input type="text" class="input" name="" placeholder="error">
+							<input type="text" class="input" name="" placeholder="Поиск">
 							<i class="icon icon-search"></i>
-							<i class="icon icon-clear hide"></i>
-							<div class="animated fadeIn error-hint">
-								<div class="error-hint__text">
-									Сообщение об ошибке
+							<i class="icon icon-times-circle"></i>
+							<div class="hint hint_error">
+								<div class="hint__text">
+									Обязательное поле
 								</div>
 							</div>
 						</div>

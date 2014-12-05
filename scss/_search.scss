@@ -1,18 +1,31 @@
 .search {
 	position: relative;
+	.icon {
+		font-size: 120%;
+		line-height: ($site-padding * 4) - 2px;
+		width: $site-padding * 4;
+		transition: color .3s;
+		&:before {
+			line-height: ($site-padding * 4) - 2px;
+			width: $site-padding * 4;
+		}
+		&:hover {
+			color: $green-sea-darken;
+		}
+	}
 	.icon-search {
 		cursor: pointer;
 		left: 0;
 		position: absolute;
 		top: 0;
 	}
-	.icon-clear {
+	.icon-times-circle {
 		cursor: pointer;
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
 	.input {
-		padding-left: 32px;
+		padding: 0 $site-padding * 4;
 	}
 }
