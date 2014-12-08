@@ -1,28 +1,28 @@
 .dropdown-sheet {
-    background: $base-color-darken;
+	background: $base-color-darken;
 	display: none;
-    padding: $site-padding;
+	padding: $site-padding;
 	position: absolute;
 	right: 0;
 	top: 100%;
 	width: $site-column * 7 + $site-padding * 3;
 	z-index: 10;
-    .btn {
-      border-color: $base-color-light;
-      margin-bottom: $site-padding;
-    }
+	.btn {
+	  border-color: $base-color-light;
+	  margin-bottom: $site-padding;
+	}
 	&__list {
-        background: $base-color-darken-1;
-        clear: both;
+		background: $base-color-darken-1;
+		clear: both;
 		list-style: none;
 		margin: $site-padding 0;
 		padding: $site-padding;
 	}
 	&__item {
 		border-top: solid 1px $base-color-dark;
-        line-height: $site-padding * 3;
-        overflow: hidden;
-        padding: $site-padding;
+		line-height: $site-padding * 3;
+		overflow: hidden;
+		padding: $site-padding;
 		position: relative;
 		transition: background .3s;
 		&:first-child {
@@ -30,7 +30,7 @@
 		}
 		&:hover {
 			background: $base-color-darken;
-            text-decoration: none;
+			text-decoration: none;
 			& + .dropdown-sheet__item {
 			}
 			.dropdown-sheet__close {
@@ -40,20 +40,29 @@
 				color: $white;
 			}
 		}
+		.field {
+			width: 50%;
+			margin-right: $site-padding * 2;
+			float: left;
+		}
+	}
+	&__controls {
+		float: right;
+		@include clearfix();
 	}
 	&__link {
 		color: $base-color-light;
-        display: block;
+		display: block;
 		font-size: 12px;
 		font-weight: 600;
 		line-height: 20px;
-        overflow: hidden;
-        position: relative;
+		overflow: hidden;
+		position: relative;
 		text-decoration: none;
 		transition: color .3s;
-        &:hover {
-          text-decoration: none;
-        }
+		&:hover {
+		  text-decoration: none;
+		}
 	}
 	&__footer {
 		border: solid 1px $base-color-light;
@@ -64,13 +73,13 @@
 	}
 	&__btn {
 		color: $base-color-light;
-        display: block;
+		display: block;
 		font-size: 12px;
 		font-weight: 600;
-        height: 30px;
+		height: 30px;
 		line-height: 14px;
 		position: relative;
-        text-align: center;
+		text-align: center;
 		text-decoration: none;
 		transition: background .3s;
 		z-index: 5;
@@ -82,26 +91,26 @@
 			color: $white;
 		}
 		.icon {
-            color: $white;
+			color: $white;
 			position: relative;
 			top: 0;
 		}
 		&_prev,
-        &_prev_all {
-            border-right: $base-color-light 1px solid;
-            float: left;
-            padding: $site-padding;
+		&_prev_all {
+			border-right: $base-color-light 1px solid;
+			float: left;
+			padding: $site-padding;
 		}
 		&_next,
-        &_next_all {
-            border-left: $base-color-light 1px solid;
-            float: right;
-            padding: $site-padding;
-            &_all {
-              border-left: $base-color-light 1px solid;
-              float: right;
-              padding: $site-padding;
-            }
+		&_next_all {
+			border-left: $base-color-light 1px solid;
+			float: right;
+			padding: $site-padding;
+			&_all {
+			  border-left: $base-color-light 1px solid;
+			  float: right;
+			  padding: $site-padding;
+			}
 		}
 	}
 	&__pages {
@@ -112,7 +121,7 @@
 		height: 30px;
 		left: 0;
 		line-height: 16px;
-        padding: $site-padding 0;
+		padding: $site-padding 0;
 		position: absolute;
 		text-align: center;
 		top: 0;
