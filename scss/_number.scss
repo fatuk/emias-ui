@@ -14,6 +14,7 @@ input::-webkit-inner-spin-button {
 		display: inline-block;
 		float: left;
 		margin-right: 16px;
+		position: relative;
 	}
 	&__btn {
 		background: $gray-light;
