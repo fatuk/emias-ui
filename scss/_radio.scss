@@ -1,9 +1,10 @@
 .radio {
-	position: relative;
 	@include clearfix();
+	float: left;
 	margin-top: 0;
 	margin-right: $site-padding * 2;
-	float: left;
+	position: relative;
+	width: 100%;
 	&:last-child {
 		margin-right: 0;
 	}
@@ -49,6 +50,8 @@
 		font-weight: normal;
 		line-height: 16px;
 		transition: color .3s;
+		text-align: left;
+		width: 80%;
 	}
 	&:hover {
 		.radio__dot {
