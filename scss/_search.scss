@@ -28,4 +28,12 @@
 	.input {
 		padding: 0 $site-padding * 4;
 	}
+	&.disabled {
+		.input {
+			background: #eee;
+			border: solid 1px #ddd !important;
+			color: #444 !important;
+			cursor: not-allowed;
+		}
+	}
 }
